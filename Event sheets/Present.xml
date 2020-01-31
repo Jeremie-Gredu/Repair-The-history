@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Present</name>
+    <events>
+        <include>Player-control</include>
+        <event-group description="" sid="314204084957273" title="Dialogues">
+            <sub-events>
+                <event-block sid="767419817809567">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="810102484566434" type="Historian">
+                            <param id="0" name="Object">BarFloor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="182017481366669" type="BarFloor" />
+                        <action id="-35" name="Set layer transparent" sid="111707067223396" type="System">
+                            <param id="0" name="Layer">&quot;Street&quot;</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="760847900562959" type="BlackScreenIsolation">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="528478457822635">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="173501546898949" type="Historian">
+                            <param id="0" name="Object">BarFloor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="265270049776988" type="BarFloor">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-35" name="Set layer transparent" sid="855601154303846" type="System">
+                            <param id="0" name="Layer">&quot;Street&quot;</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="798305149500820" type="BlackScreenIsolation">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="228057679010783">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="605056745168499" type="Historian">
+                            <param id="0" name="Object">JeanMi2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="686613107046473" type="Text">
+                            <param id="0" name="Text">JeanMi.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="441620191922362">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="210797774233241" type="Historian">
+                            <param id="0" name="Object">JeanMi2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="317408393058107" type="Text">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
