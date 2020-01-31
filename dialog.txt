@@ -1,5 +1,6 @@
 intro:
-
+sms- scientist:
+hey, we finished building the time machine, you can come to do the testing. it's in the alley behind the bar, go in the basement.
 
 scientist: 
 Hi, thanks for coming. Today is the big day, we test the time machine! I'm so exited.
