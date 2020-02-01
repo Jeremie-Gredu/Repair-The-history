@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -177,11 +178,6 @@
         <object-folder name="ScriptMoves">
             <object-type name="CtrlCam" sid="723949391520962">
                 <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="ScrollTo" sid="382952798852791">
-                        <behavior id="scrollto" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511251569235996" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -234,6 +230,36 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Police__0" sid="463012681769125">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794695852226018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Policemen_zone" sid="170124815451913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598978587358705" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Police__1" sid="936542190271551">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768190385529155" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="324027411062617">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="policement_text" sid="369389015802948">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

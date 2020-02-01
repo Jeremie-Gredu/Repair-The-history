@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Present_0</layout>
-        <event-sheet active="1" order="1">Present</event-sheet>
+        <layout active="1" order="0">Present_0</layout>
+        <event-sheet order="1">Present</event-sheet>
         <event-sheet order="2">Player-control</event-sheet>
     </open-tabs>
     <properties>
@@ -48,5 +48,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/CtrlUp/" />
         <folder expanded="1" path="animation-folder/Ctrl/" />
         <folder expanded="1" path="animation-folder/TimeMachine/" />
+        <folder expanded="1" path="animation-folder/Police__0/" />
+        <folder expanded="1" path="animation-folder/Policemen_zone/" />
+        <folder expanded="1" path="animation-folder/Police__1/" />
     </folders-expanded>
 </c2uistate>
