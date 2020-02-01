@@ -10,9 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Present_0</layout>
-        <event-sheet order="1">Present</event-sheet>
-        <event-sheet order="2">Player-control</event-sheet>
+        <layout order="0">Present_0</layout>
+        <layout active="1" order="3">BattleField_0</layout>
+        <event-sheet order="1">Present-s-EV</event-sheet>
+        <event-sheet order="2">Historian_control_EV</event-sheet>
+        <event-sheet order="4">BattleField_0_EV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,6 +28,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Dico/" />
         <folder expanded="1" path="object-folder/Game basics/" />
         <folder expanded="1" path="object-folder/Perso/" />
+        <folder expanded="1" path="object-folder/PresentEnvironement/" />
+        <folder expanded="1" path="object-folder/ScriptMoves/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -35,10 +39,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Historian/" />
         <folder expanded="1" path="animation-folder/Camera/" />
         <folder expanded="1" path="animation-folder/Wall/" />
-        <folder expanded="1" path="animation-folder/JeanMi/" />
+        <folder expanded="1" path="animation-folder/Scientist/" />
         <folder expanded="1" path="animation-folder/JeanMi2/" />
         <folder expanded="1" path="animation-folder/BarFloor/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/BlackScreenIsolation/" />
+        <folder expanded="1" path="animation-folder/caveGround/" />
+        <folder expanded="1" path="animation-folder/CtrlCam/" />
+        <folder expanded="1" path="animation-folder/CtrlLeft/" />
+        <folder expanded="1" path="animation-folder/CtrlStop/" />
+        <folder expanded="1" path="animation-folder/CtrlUp/" />
+        <folder expanded="1" path="animation-folder/Ctrl/" />
+        <folder expanded="1" path="animation-folder/TimeMachine/" />
+        <folder expanded="1" path="animation-folder/Police__0/" />
+        <folder expanded="1" path="animation-folder/Policemen_zone/" />
+        <folder expanded="1" path="animation-folder/Police__1/" />
     </folders-expanded>
 </c2uistate>

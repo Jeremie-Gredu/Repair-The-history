@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>BattleField_0_EV</name>
+    <events>
+        <include>Historian_control_EV</include>
+    </events>
+</c2eventsheet>
