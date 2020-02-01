@@ -32,6 +32,36 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="521374801887782">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="606472770301752" type="TextBackground">
+                                    <param id="0" name="Object">Policemen_zone</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="468830036175729" type="Historian">
+                                    <param id="0" name="Object">Policemen_zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="416034895968815" type="TextBackground">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="577016205555755">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="703538216445590" type="TextBackground">
+                                    <param id="0" name="Object">Policemen_zone</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="270857294674115" type="Historian">
+                                    <param id="0" name="Object">Policemen_zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="558252260380672" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="863854124495143" title="Scientist 1">
@@ -49,8 +79,11 @@
                                 <action id="-16" name="Wait" sid="119166206233682" type="System">
                                     <param id="0" name="Seconds">0.3</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="256089450741428" type="TextBackground">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
                                 <action id="0" name="Set text" sid="273830072936117" type="ScientistText">
-                                    <param id="0" name="Text">&quot;Hi, thanks for coming. Today is the big day, we test the time machine! I&apos;m so exited ! ... [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;Hi, thanks for coming. Today is the big day, we finally test the time machine! I&apos;m so excited. [E]&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -60,7 +93,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="579803277171528" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;Hi, thanks for coming. Today is the big day, we test the time machine! I&apos;m so exited ! ... [E]&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;Hi, thanks for coming. Today is the big day, we finally test the time machine! I&apos;m so excited. [E]&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -69,7 +102,7 @@
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
                                 <action id="0" name="Set text" sid="546639801183598" type="ScientistText">
-                                    <param id="0" name="Text">&quot;As you know, normaly you would try investigate the truth of certain historical event in the period and location we were send to. [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;As you know, normally you would try to investigate the truth of a certain historical event in the period and location we&apos;ve decided. [E]&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -79,7 +112,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="721160157069557" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;As you know, normaly you would try investigate the truth of certain historical event in the period and location we were send to. [E]&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;As you know, normally you would try to investigate the truth of a certain historical event in the period and location we&apos;ve decided. [E]&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -88,7 +121,7 @@
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
                                 <action id="0" name="Set text" sid="198789199604741" type="ScientistText">
-                                    <param id="0" name="Text">&quot;But today we just calibrate the machine, so you must go to 8B50 5 june and take a newspaper with you when you come back. [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;But today we just calibrate the machine! So, you will go to the 5th of June 8B50 and take a newspaper with you when you come back. [E]&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -98,7 +131,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="485848034342854" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;But today we just calibrate the machine, so you must go to 8B50 5 june and take a newspaper with you when you come back. [E]&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;But today we just calibrate the machine! So, you will go to the 5th of June 8B50 and take a newspaper with you when you come back. [E]&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -107,7 +140,7 @@
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
                                 <action id="0" name="Set text" sid="543836684814336" type="ScientistText">
-                                    <param id="0" name="Text">&quot;when you have finished the mission, to come back join the extraction point zz9-plural-z-alpha&quot;</param>
+                                    <param id="0" name="Text">&quot;Try to take some notes of events you encounter, like what was this up floor bar before it opens. [E]&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -117,7 +150,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="636075410169946" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;when you have finished the mission, to come back join the extraction point zz9-plural-z-alpha&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;Try to take some notes of events you encounter, like what was this up floor bar before it opens. [E]&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -126,6 +159,25 @@
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
                                 <action id="0" name="Set text" sid="480745103384658" type="ScientistText">
+                                    <param id="0" name="Text">&quot;when you have finished the mission, join the extraction point. [E] &quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="179285930459826">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="333024770919234" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="703153419819703" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;when you have finished the mission, join the extraction point. [E] &quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="299401358168462" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Set text" sid="851907231560554" type="ScientistText">
                                     <param id="0" name="Text">&quot;..... [E]&quot;</param>
                                 </action>
                             </actions>
@@ -143,6 +195,9 @@
                             <actions>
                                 <action id="-16" name="Wait" sid="656125659321954" type="System">
                                     <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="815965472408337" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="439555435887604" type="ScientistText">
                                     <param id="0" name="Text">&quot;&quot;</param>
@@ -166,11 +221,14 @@
                                 <action id="-16" name="Wait" sid="274217046238257" type="System">
                                     <param id="0" name="Seconds">0.4</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="128863080380998" type="TextBackground">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
                                 <action id="0" name="Set text" sid="655152763738814" type="ScientistText">
-                                    <param id="0" name="Text">&quot;oh, I almost forgot to tell you, please dont modify the past, we&apos;r not sure of the consequances it can have....&quot;</param>
+                                    <param id="0" name="Text">&quot;Oh, I almost forgot to tell you, please don&apos;t modify the past, we&apos;re not sure of the consequences it can have.&quot;</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="478459854835362" type="System">
-                                    <param id="0" name="Seconds">2</param>
+                                    <param id="0" name="Seconds">4</param>
                                 </action>
                                 <action behavior="Fade" id="1" name="Start fade" sid="222450459227453" type="BlackScreenIsolation" />
                                 <action id="-10" name="Set value" sid="441038782437093" type="Historian">
@@ -217,10 +275,16 @@
                                     <param id="0" name="State">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="308683746745074" type="System">
-                                    <param id="0" name="Seconds">0.4</param>
+                                    <param id="0" name="Seconds">0.5</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="454938078584559" type="Historian" />
                                 <action id="-9" name="Destroy" sid="175672991945871" type="Camera" />
+                                <action id="-16" name="Wait" sid="500574889795601" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="286861482568002" type="System">
+                                    <param id="0" name="Layout">BattleField_0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
