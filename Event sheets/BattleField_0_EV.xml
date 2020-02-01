@@ -4,5 +4,6 @@
     <name>BattleField_0_EV</name>
     <events>
         <include>Historian_control_EV</include>
+        <event-group description="" sid="918420784073687" title="Dialogues _ Date 1" />
     </events>
 </c2eventsheet>
