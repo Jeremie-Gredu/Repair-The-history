@@ -239,9 +239,9 @@
                             <param id="0" name="Pin to">BlackBackGound</param>
                             <param id="1" name="Mode">1</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="784731653768243" type="BookThings">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="780002366141177" type="BookTextBackGound">
                             <param id="0" name="Pin to">Book</param>
-                            <param id="1" name="Mode">0</param>
+                            <param id="1" name="Mode">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -249,6 +249,164 @@
         </event-group>
         <event-group description="" sid="278557615606468" title="Cam + scripts">
             <sub-events>
+                <event-group description="" sid="339879911770990" title="Book Zone1">
+                    <sub-events>
+                        <comment>//// X ////</comment>
+                        <event-block sid="434963793798283">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="557151418727250" type="Historian">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">960</param>
+                                </condition>
+                                <condition id="-1" name="Every tick" sid="624725462533071" type="System" />
+                                <condition id="-2" name="Compare Y" sid="137629568400854" type="Historian">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">540</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="547023952133999" type="Historian">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">3460</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="1" name="Unpin" sid="549021300227567" type="BlackBackGound" />
+                                <action id="-2" name="Set Y" sid="547537124568789" type="BlackBackGound">
+                                    <param id="0" name="Y">Historian.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="909162870187629">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="784002385290569" type="Historian">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">960</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="228736298316484" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="790012750727124" type="BlackBackGound">
+                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="625502592322237">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="523383870168447" type="Historian">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">6040</param>
+                                </condition>
+                                <condition id="-1" name="Every tick" sid="792603354956462" type="System" />
+                                <condition id="-2" name="Compare Y" sid="639249816241222" type="Historian">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">540</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="759857819115134" type="Historian">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">3460</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="1" name="Unpin" sid="156832459983138" type="BlackBackGound" />
+                                <action id="-2" name="Set Y" sid="643627952563342" type="BlackBackGound">
+                                    <param id="0" name="Y">Historian.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="434962467717464">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="936057611937408" type="Historian">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">6040</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="125418428918317" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="779567566159597" type="BlackBackGound">
+                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>//// Y ////</comment>
+                        <event-block sid="113324093013768">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="721218783249675" type="Historian">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Y co-ordinate">540</param>
+                                </condition>
+                                <condition id="-1" name="Every tick" sid="690730762678415" type="System" />
+                                <condition id="-1" name="Compare X" sid="526931917074937" type="Historian">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">960</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="226178718090317" type="Historian">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">6040</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="1" name="Unpin" sid="349773862950202" type="BlackBackGound" />
+                                <action id="-1" name="Set X" sid="888890645744094" type="BlackBackGound">
+                                    <param id="0" name="X">Historian.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="712899763456916">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="736214733807101" type="Historian">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">540</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="962301697863580" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="957227350039862" type="BlackBackGound">
+                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="500833472023941">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="954420726276455" type="Historian">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">3460</param>
+                                </condition>
+                                <condition id="-1" name="Every tick" sid="799864962606463" type="System" />
+                                <condition id="-1" name="Compare X" sid="996989343885342" type="Historian">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">960</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="895645647825709" type="Historian">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">6040</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="1" name="Unpin" sid="212735966063789" type="BlackBackGound" />
+                                <action id="-1" name="Set X" sid="767732173380814" type="BlackBackGound">
+                                    <param id="0" name="X">Historian.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="371621693265011">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="930231854871642" type="Historian">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">3460</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="432332810356730" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="348574067111544" type="BlackBackGound">
+                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="379828051178152">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="926176609027183" type="Camera">

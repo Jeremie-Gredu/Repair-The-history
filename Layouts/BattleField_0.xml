@@ -9123,6 +9123,28 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
+                <instance type="Yellow_Mines" uid="401">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4352</x>
+                        <y>608</y>
+                        <z>0</z>
+                        <width>384</width>
+                        <height>576</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.5</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -9166,7 +9188,7 @@
                 </instance>
                 <instance type="Bleu_Sequelles" uid="354">
                     <properties>
-                        <text>This one will be disfigured for life...</text>
+                        <text>This one might be disfigured for life...</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Segoe Print,-21.6,400,0</font>
                         <color>102,153,255</color>
@@ -10259,28 +10281,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Yellow_Mines" uid="401">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4352</x>
-                        <y>608</y>
-                        <z>0</z>
-                        <width>384</width>
-                        <height>576</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.5</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
@@ -10375,76 +10375,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="429">
+                <instance type="BookTextBackGound" uid="459">
                     <properties>
-                        <text>OFFICIAL HISTORY BOOK</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3200</x>
-                        <y>1408</y>
-                        <z>0</z>
-                        <width>192</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="BookThings" uid="430">
-                    <properties>
-                        <text>NoteBook</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3968</x>
-                        <y>1408</y>
-                        <z>0</z>
-                        <width>192</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="BookThings" uid="431">
-                    <properties>
-                        <text>THING TO CHECK</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10453,27 +10389,23 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3104</x>
-                        <y>1600</y>
+                        <y>1568</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="432">
+                <instance type="BookTextBackGound" uid="458">
                     <properties>
-                        <text>THING TO CHECK</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10482,27 +10414,48 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3328</x>
-                        <y>1600</y>
+                        <y>1568</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="433">
+                <instance type="BookTextBackGound" uid="460">
                     <properties>
-                        <text>THING TO CHECK</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3328</x>
+                        <y>1920</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>288</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
+                    </world>
+                </instance>
+                <instance type="BookTextBackGound" uid="461">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10511,56 +10464,23 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3104</x>
-                        <y>1952</y>
+                        <y>1920</y>
                         <z>0</z>
                         <width>192</width>
-                        <height>256</height>
+                        <height>288</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="434">
+                <instance type="BookTextBackGound" uid="462">
                     <properties>
-                        <text>THING TO CHECK</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3328</x>
-                        <y>1952</y>
-                        <z>0</z>
-                        <width>192</width>
-                        <height>256</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="BookThings" uid="435">
-                    <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10576,20 +10496,116 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="436">
+                <instance type="BookTextBackGound" uid="463">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4416</x>
+                        <y>1856</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>320</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
+                    </world>
+                </instance>
+                <instance type="BookTextBackGound" uid="464">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4672</x>
+                        <y>1856</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>320</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
+                    </world>
+                </instance>
+                <instance type="BookTextBackGound" uid="465">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4416</x>
+                        <y>1440</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>352</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
+                    </world>
+                </instance>
+                <instance type="BookTextBackGound" uid="466">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4672</x>
+                        <y>1440</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>352</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
+                    </world>
+                </instance>
+                <instance type="BookTextBackGound" uid="467">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10605,20 +10621,16 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="437">
+                <instance type="BookTextBackGound" uid="468">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10630,24 +10642,20 @@
                         <y>1792</y>
                         <z>0</z>
                         <width>192</width>
-                        <height>160</height>
+                        <height>192</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="438">
+                <instance type="BookTextBackGound" uid="469">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10659,24 +10667,20 @@
                         <y>1792</y>
                         <z>0</z>
                         <width>192</width>
-                        <height>160</height>
+                        <height>192</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="439">
+                <instance type="BookTextBackGound" uid="470">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10692,20 +10696,16 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="440">
+                <instance type="BookTextBackGound" uid="471">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10713,28 +10713,54 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4416</x>
+                        <x>3168</x>
+                        <y>1408</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.100000001</opacity>
+                    </world>
+                </instance>
+                <instance type="BookTextBackGound" uid="472">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3872</x>
                         <y>1440</y>
                         <z>0</z>
-                        <width>192</width>
-                        <height>320</height>
+                        <width>384</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.100000001</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="441">
+                <instance type="StolenCanon" uid="444">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
+                        <text>Stolen canon - During the firsts conflicts, the yellows organized a raid. They&apos;ve stolen a QF 4.7-inch canon and loads of munitions from one of our storage facilities in the east. Fortunately, they didn&apos;t stumble upon our advanced mobile artillery vehicles secret prototype.</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10742,28 +10768,481 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4672</x>
+                        <x>3104</x>
+                        <y>1568</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>288</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Chemical" uid="434">
+                    <properties>
+                        <text>Use of forbidden wapons - In the heart of the conflict, the yellows used a restricted weapon. the chemical shells caused a lot of casualties in our ranks. the newspapers titled &quot;the cold-blooded deployment of every device of modern science&quot;</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3104</x>
+                        <y>1920</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>256</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Hostages" uid="473">
+                    <properties>
+                        <text>Executions - During a quiet time between two assaults, when our troops were regrouping for an assault with a new weapon, the yellows regrouped their prisoners and lined them up in a field. Then with little care, coldly blew up their prisoners.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3328</x>
+                        <y>1568</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>288</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ToMuchPain" uid="429">
+                    <properties>
+                        <text>Unneccessary pain - During the battles, a lot of our brave soldier were completly disfigured due, for most, to the use of mines and other unnecessary violent wapons.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3328</x>
+                        <y>1920</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>256</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Mines" uid="450">
+                    <properties>
+                        <text>The Yellow mines can cause serious problem on civilians when the war is over.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4512</x>
+                        <y>2016</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>320</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="AfterEffects" uid="451">
+                    <properties>
+                        <text>Some wounded bleu soldiers have been disfigured or present severe after effects.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4064</x>
+                        <y>2112</y>
+                        <z>0</z>
+                        <width>448</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ForcedToFight" uid="452">
+                    <properties>
+                        <text>some Bleu soldiers were brought by force to the battlefield. There were no real soldiers and there were very scared.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4768</x>
+                        <y>2016</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>320</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BombAllies" uid="453">
+                    <properties>
+                        <text>The blue ones have bombed the position where their soldiers were taken in hostage. They did it on purpose to destroy the nearby supplies.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4512</x>
+                        <y>1616</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>352</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BombesVolees" uid="430">
+                    <properties>
+                        <text>The forbidden bombs used by the Yellow army are in fact stolen blue bombs.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4192</x>
+                        <y>1664</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SentWounded" uid="431">
+                    <properties>
+                        <text>The Yellow army have sent their wounded soldiers on the frontline.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4768</x>
+                        <y>1618</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>352</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="KillingPrisoners" uid="432">
+                    <properties>
+                        <text>The bleu one are killing their Yellow prisoners.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3936</x>
+                        <y>1888</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pendus" uid="433">
+                    <properties>
+                        <text>The Yellow army hangs and humiliate their prisoners.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3936</x>
+                        <y>1664</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Torture" uid="435">
+                    <properties>
+                        <text>The Yellow commanders are torturing their prisoners.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tahoma,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>2</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4203</x>
+                        <y>1881</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="HistoryBookTxxt" uid="445">
+                    <properties>
+                        <text>History Book</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Impact,-24,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3168</x>
+                        <y>1408</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NoteBookTitle" uid="443">
+                    <properties>
+                        <text>Personal   notebook</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Impact,-24,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3872</x>
                         <y>1440</y>
                         <z>0</z>
-                        <width>192</width>
-                        <height>320</height>
+                        <width>384</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="442">
+                <instance type="markSign" uid="438">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>5</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5056</x>
+                        <y>1376</y>
+                        <z>0</z>
+                        <width>150</width>
+                        <height>150</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved1" uid="439">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10771,28 +11250,24 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4416</x>
-                        <y>1824</y>
+                        <x>3506.6875</x>
+                        <y>1876.307250977</y>
                         <z>0</z>
-                        <width>192</width>
-                        <height>320</height>
+                        <width>15</width>
+                        <height>15</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BookThings" uid="443">
+                <instance type="Approuved2" uid="440">
                     <properties>
-                        <text>Thing to discover</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -10800,14 +11275,291 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4672</x>
-                        <y>1824</y>
+                        <x>3281.961914063</x>
+                        <y>1875.188720703</y>
                         <z>0</z>
-                        <width>192</width>
-                        <height>320</height>
+                        <width>15</width>
+                        <height>15</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved3" uid="441">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3287.343261719</x>
+                        <y>2195.914306641</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved4" uid="442">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3504.244873047</x>
+                        <y>2198.221435547</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved5" uid="446">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4018.783691406</x>
+                        <y>1747.511962891</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved6" uid="447">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4274.89453125</x>
+                        <y>1749.816162109</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved7" uid="448">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4018.004150391</x>
+                        <y>1972.864135742</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved8" uid="449">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4279.519042969</x>
+                        <y>1973.634765625</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved9" uid="454">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4277.209960938</x>
+                        <y>2198.224365234</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved10" uid="455">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4600.242675781</x>
+                        <y>2167.458496094</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved11" uid="456">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4855</x>
+                        <y>2167</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved12" uid="457">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4853</x>
+                        <y>1783</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Approuved13" uid="474">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4601.020996094</x>
+                        <y>1782.119628906</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.533333361</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

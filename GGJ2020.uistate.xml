@@ -13,8 +13,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Present_0</layout>
         <layout order="3">BattleField_0</layout>
         <event-sheet order="1">Present-s-EV</event-sheet>
-        <event-sheet active="1" order="2">Historian_control_EV</event-sheet>
-        <event-sheet order="4">BattleField_0_EV</event-sheet>
+        <event-sheet order="2">Historian_control_EV</event-sheet>
+        <event-sheet active="1" order="4">BattleField_0_EV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -49,6 +49,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Soldat_Jaune/" />
         <folder expanded="1" path="animation-folder/Field_TimeMachine/" />
         <folder expanded="1" path="animation-folder/TextBackground/" />
+        <folder expanded="1" path="animation-folder/BookTextBackGound/" />
         <folder expanded="1" path="animation-folder/Scientist/" />
         <folder expanded="1" path="animation-folder/JeanMi2/" />
         <folder expanded="1" path="animation-folder/BarFloor/" />
@@ -100,5 +101,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Yellow_Mines/" />
         <folder expanded="1" path="animation-folder/Book/" />
         <folder expanded="1" path="animation-folder/BlackBackGound/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/markSign/" />
+        <folder expanded="1" path="animation-folder/Approuved1/" />
+        <folder expanded="1" path="animation-folder/Approuved2/" />
+        <folder expanded="1" path="animation-folder/Approuved3/" />
+        <folder expanded="1" path="animation-folder/Approuved4/" />
+        <folder expanded="1" path="animation-folder/Approuved5/" />
+        <folder expanded="1" path="animation-folder/Approuved6/" />
+        <folder expanded="1" path="animation-folder/Approuved7/" />
+        <folder expanded="1" path="animation-folder/Approuved8/" />
+        <folder expanded="1" path="animation-folder/Approuved9/" />
+        <folder expanded="1" path="animation-folder/Approuved10/" />
+        <folder expanded="1" path="animation-folder/Approuved11/" />
+        <folder expanded="1" path="animation-folder/Approuved12/" />
+        <folder expanded="1" path="animation-folder/Approuved13/" />
     </folders-expanded>
 </c2uistate>

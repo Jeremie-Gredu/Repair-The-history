@@ -1088,5 +1088,1197 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-group description="" sid="819888623099078" title="Book Interaction _1">
+            <sub-events>
+                <event-block sid="462577545830644">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="206370758420063" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="998964882691806">
+                            <conditions />
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="614127384624533" type="Chemical">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="500324076165747" type="Hostages">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="439801935012767" type="BombesVolees">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="811807754410532" type="SentWounded">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="708363221887335" type="KillingPrisoners">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="848662121418366" type="Pendus">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="317040230894106" type="Torture">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="823762958364520" type="Mines">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="896080497172985" type="AfterEffects">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="435370125176319" type="ForcedToFight">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="497242507250738" type="BombAllies">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="193713676701754" type="ToMuchPain">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="845041379760028" type="StolenCanon">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="915632909962938" type="HistoryBookTxxt">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="203091895650511" type="NoteBookTitle">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="702277606461358" type="markSign">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="260468419266515" type="Approuved1">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="769608956287403" type="Approuved2">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="846130063372759" type="Approuved3">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="565110885231319" type="Approuved4">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="658835630867094" type="Approuved5">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="274416220738504" type="Approuved6">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="330741959599140" type="Approuved7">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="156699853858929" type="Approuved8">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="658268228301419" type="Approuved9">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="281435605083341" type="Approuved10">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="845963333601597" type="Approuved11">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="794353282973093" type="Approuved12">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="761206705146004" type="Approuved13">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="647645632161801" type="Approuved1">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="687932901250181" type="Approuved2">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="876404683371129" type="Approuved3">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="262841186583648" type="Approuved4">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="530380786694419" type="Approuved5">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="316390657017135" type="Approuved6">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="413208173253221" type="Approuved7">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="160219700105475" type="Approuved8">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="486761983647592" type="Approuved9">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="668545043443306" type="Approuved10">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="444862489620650" type="Approuved11">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="651977623571582" type="Approuved12">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="448098557405860" type="Approuved13">
+                                    <param id="0" name="Pin to">Book</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="947964562109113" title="Official">
+                    <sub-events>
+                        <event-block sid="505090661328454">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="112727610957059" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Chemical</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="154070755304727">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="544286380142327" type="Chemical">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="415982093678563" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="621737037617066" type="Approuved3">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="449338073813034" type="Chemical">
+                                            <param id="0" name="Opacity">40</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="507483376177727">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="113636083091656" type="Chemical">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="268179202642365" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="333432064744556" type="Approuved3">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="554729838259687" type="Chemical">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="989844182917864">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="421680713451839" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">StolenCanon</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="435784356863780">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="431513595540057" type="StolenCanon">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="112227595174812" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="414486242173213" type="Approuved2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="500285343191438" type="StolenCanon">
+                                            <param id="0" name="Opacity">40</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="449355808235075">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="279833386031890" type="StolenCanon">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="515704480415314" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="791804076923853" type="Approuved2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="966385517846055" type="StolenCanon">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="191278335374974">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="678374254804168" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Hostages</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="465692358259412">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="790865501993851" type="Hostages">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="495029005980565" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="904171238934833" type="Approuved1">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="988232795668050" type="Hostages">
+                                            <param id="0" name="Opacity">40</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="725304798073891">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="467567171849406" type="Hostages">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="510567868331018" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="668394138798590" type="Approuved1">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="789563519365841" type="Hostages">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="219961260667853">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="638704485536300" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">ToMuchPain</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="516299936281684">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="990015776305062" type="ToMuchPain">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="305193102294582" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="477168334288372" type="Approuved4">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="274087020681428" type="ToMuchPain">
+                                            <param id="0" name="Opacity">40</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="199768390540581">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="826737624508047" type="ToMuchPain">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="554807867038093" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="969688804012369" type="Approuved4">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="659054384501003" type="ToMuchPain">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="908293260657002" title="NoteBook">
+                    <sub-events>
+                        <event-group description="" sid="342796440627190" title="Toggle">
+                            <sub-events>
+                                <event-block sid="736542599853636">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="913582529140878" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">AfterEffects</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="618212699158264">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="369048714941342" type="AfterEffects">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="687396463958639" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="910452797786283" type="AfterEffects">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="918369469771484" type="Approuved9">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="999448569861111">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="587099613088643" type="AfterEffects">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="453989216483959" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="493510862383758" type="AfterEffects">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="324836896247144" type="Approuved9">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="406725268087295">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="280665084277727" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">BombAllies</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="953933236647704">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="562189751019605" type="BombAllies">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="150244121524119" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="363904856666361" type="BombAllies">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="438698553021795" type="Approuved13">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="668499001745183">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="657416399157949" type="BombAllies">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="801257467648637" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="924468749370374" type="Approuved13">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="845893164980065" type="BombAllies">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="698635316513555">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="439161703069761" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">BombesVolees</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="717619407103946">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="191310036457351" type="Chemical">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="894245803642666" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="794447192482189" type="Approuved6">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="904023144984183" type="Chemical">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="886730217279815">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="707350240386588" type="Chemical">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="301749368438801" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="866001295837559" type="Chemical">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="961984714047591" type="Approuved6">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="604468379911616">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="765176390368272" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">ForcedToFight</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="508365973047422">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="417042487350156" type="ForcedToFight">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="277229126276217" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="634737575595293" type="ForcedToFight">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="297117962317474" type="Approuved11">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="207779655222031">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="852170724667555" type="ForcedToFight">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="500786306729144" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="120878141689274" type="ForcedToFight">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="315063585346649" type="Approuved11">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="293863476654932">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="671520623629033" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">KillingPrisoners</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="958616070965479">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="584720142562843" type="KillingPrisoners">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="975305752616729" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="505405449752753" type="KillingPrisoners">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="107453187887626" type="Approuved7">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="963494702778077">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="378334940302560" type="KillingPrisoners">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="426541391206948" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="248249135153425" type="KillingPrisoners">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="171168155171763" type="Approuved7">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="562248720650890">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="215506025813945" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Mines</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="410076438341721">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="293172086901437" type="Mines">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="367939078054002" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="853053963760284" type="Mines">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="418742107269834" type="Approuved10">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="392755543070421">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="653456179245954" type="Mines">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="886017919507635" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="854532646046719" type="Mines">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="547149928076807" type="Approuved10">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="677314965929585">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="999591835430683" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Pendus</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="839913426903576">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="954729103779150" type="Pendus">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="727873461464730" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="863650382475192" type="Pendus">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="365252417105606" type="Approuved5">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="304853175732439">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="787800017326875" type="Pendus">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="842443265326044" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="957252715611988" type="Pendus">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="648794183654677" type="Approuved5">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="351034366872612">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="289239308529007" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">SentWounded</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="474333061690058">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="977896395647068" type="SentWounded">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="929800385044336" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="268899726670792" type="SentWounded">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="976458194269845" type="Approuved12">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="800949266760147">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="307396362805248" type="SentWounded">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="899332550333189" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="810850003003386" type="SentWounded">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="431963209142304" type="Approuved12">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="167895269629378">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="897851650820989" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Torture</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="387176161640771">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="996514819817691" type="Torture">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="661388868956088" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="263281279706407" type="Torture">
+                                                    <param id="0" name="Opacity">40</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="353287922241492" type="Approuved8">
+                                                    <param id="0" name="Frame number">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="936209728134545">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="260861176401946" type="Torture">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Opacity">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="119626409027202" type="System">
+                                                    <param id="0" name="Seconds">0.01</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="724215470559018" type="Torture">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="675007398114696" type="Approuved8">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="171325879544459" title="Discover">
+                            <sub-events>
+                                <event-block sid="381889437498118">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="956800393934971" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="311371400271307" type="markSign">
+                                            <param id="0" name="X">-100</param>
+                                            <param id="1" name="Y">-100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="729312037570423">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="553564504705196" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="139941156641645" type="Historian">
+                                            <param id="0" name="Object">Yellow_Wounded_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="733890029262615" type="markSign">
+                                            <param id="0" name="X">SentWounded.X</param>
+                                            <param id="1" name="Y">SentWounded.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="448674728839534" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">SentWounded</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="663041328367788" type="markSign">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="101653138038979">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="429889355912309" type="SentWounded" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="359003482780491" type="SentWounded">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="873049147831946" type="Approuved12">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="713511663279935">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="708254384443156" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="535646170482572" type="Historian">
+                                            <param id="0" name="Object">Blue_goHome_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="349596181511055" type="markSign">
+                                            <param id="0" name="X">ForcedToFight.X</param>
+                                            <param id="1" name="Y">ForcedToFight.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="473324352672230" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">ForcedToFight</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="658545517249959" type="markSign">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="896921121975896">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="617300671470049" type="ForcedToFight" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="962166714272927" type="ForcedToFight">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="862565474842454" type="Approuved11">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="591679776370694">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="268469966022883" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="245777574419079" type="Historian">
+                                            <param id="0" name="Object">Blue_Execution_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="682912026874574" type="markSign">
+                                            <param id="0" name="X">KillingPrisoners.X</param>
+                                            <param id="1" name="Y">KillingPrisoners.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="933580577820436" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">KillingPrisoners</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="173711337117431" type="markSign">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="663267114254041">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="102345224843317" type="KillingPrisoners" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="992625797952435" type="KillingPrisoners">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="841522601630319" type="Approuved7">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="740525940550535">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="922421676438021" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="953865851608859" type="Historian">
+                                            <param id="0" name="Object">Yellow_HangingCorps_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="383680985217046" type="markSign">
+                                            <param id="0" name="X">Pendus.X</param>
+                                            <param id="1" name="Y">Pendus.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="394912000725260" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Pendus</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="265218603533296" type="markSign">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="719335511003381">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="268417439294330" type="Pendus" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="744182277338567" type="Approuved5">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="361074675765607" type="Pendus">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="652364933541285">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="771863043330326" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="979885271126562" type="Historian">
+                                            <param id="0" name="Object">Yellow_Mines</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="707035518210819" type="markSign">
+                                            <param id="0" name="X">Mines.X</param>
+                                            <param id="1" name="Y">Mines.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="862029435509074" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Mines</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="337746143515698" type="markSign">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="540995647203041">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="779504930074426" type="Mines" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="773322332067711" type="Mines">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="390301815497574" type="Approuved10">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="232798896139536">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="508614955581825" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="427453036462375" type="Historian">
+                                            <param id="0" name="Object">Yellow_badWapon_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="903446721628144" type="markSign">
+                                            <param id="0" name="X">BombesVolees.X</param>
+                                            <param id="1" name="Y">BombesVolees.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="978024386292741" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">BombesVolees</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="993999676989717" type="markSign">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="428082226792772">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="763692153391713" type="BombesVolees" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="117575418146374" type="BombesVolees">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="379890913558829" type="Approuved6">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="973493742756425">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="383208691572109" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="267711580821636" type="Historian">
+                                            <param id="0" name="Object">Blue_Command_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="432446221657534" type="markSign">
+                                            <param id="0" name="X">BombAllies.X</param>
+                                            <param id="1" name="Y">BombAllies.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="969016079435349" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">BombAllies</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="292821718979608" type="markSign">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="885681111051487">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="289837538216781" type="BombAllies" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="506489789902844" type="BombAllies">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="785989397039653" type="Approuved13">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="839969373237991">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="890170992476710" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="679866364185799" type="Historian">
+                                            <param id="0" name="Object">Yellow_Command_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="154724494081436" type="markSign">
+                                            <param id="0" name="X">Torture.X</param>
+                                            <param id="1" name="Y">Torture.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="947382399117604" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">Torture</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="807568237914430" type="markSign">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="734694125645077">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="263416579071963" type="Torture" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="452984200594580" type="Torture">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="964113225259287" type="Approuved8">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="541447588147941">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="298380957798189" type="Keyboard">
+                                            <param id="0" name="Key">70</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="626528738006793" type="Historian">
+                                            <param id="0" name="Object">Blue_Scars_Zone</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="470334514889104" type="markSign">
+                                            <param id="0" name="X">AfterEffects.X</param>
+                                            <param id="1" name="Y">AfterEffects.Y</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="704163784775471" type="markSign">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Object">AfterEffects</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="885994164493630" type="markSign">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="974878100558066">
+                                            <conditions>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="779266400456425" type="AfterEffects" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="313244486501754" type="AfterEffects">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="753166440631658" type="Approuved9">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

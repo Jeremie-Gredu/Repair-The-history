@@ -12,7 +12,9 @@
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
@@ -22,6 +24,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -193,6 +196,19 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690891826254960" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BookTextBackGound" sid="752264691127660">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="483703835839424">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176076531020753" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -776,13 +792,365 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BookThings" sid="576109674693241">
-            <plugin id="TextBox" />
+        <object-type name="Sprite" sid="331581463434076">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="742541858495244" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StolenCanon" sid="951362505788284">
+            <plugin id="Text" />
             <behaviors>
-                <behavior-type name="Pin" sid="763436461162784">
+                <behavior-type name="Pin" sid="523550134690671">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+        </object-type>
+        <object-type name="HistoryBookTxxt" sid="559109041989952">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="558270289399873">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Chemical" sid="467269933121519">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="938435288845075">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Hostages" sid="477728174709345">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="596473609024961">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="NoteBookTitle" sid="601845139388105">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="143380972195351">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Mines" sid="762807221154594">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="126641333496886">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="AfterEffects" sid="805567921429835">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="632423861991929">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="ForcedToFight" sid="176442686431057">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="747164996789491">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BookThings2" sid="900897910538367">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="943235094189218">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BombAllies" sid="907938256264763">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="961995322628100">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="ToMuchPain" sid="447128430998752">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="248456658905630">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BombesVolees" sid="428477674368941">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="154800116231000">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="SentWounded" sid="165224442876255">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="834904544054083">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="KillingPrisoners" sid="389075607188515">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="667250751819402">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Pendus" sid="147569584567346">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="460879478190867">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Torture" sid="839777500482072">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="246186412900321">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Mouse" sid="539031189589811">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Function" sid="670217332518475">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="markSign" sid="912462360799625">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="263375935301255">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956846420849600" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jerem\Desktop\Jeux VIdéo\Testsss\Get The Ball\Test_graphs\Disc.png">
+                        <collision-poly>
+                            <point x="0.1495" y="0.1495" />
+                            <point x="0.5" y="0.0045" />
+                            <point x="0.8505" y="0.1495" />
+                            <point x="0.9955" y="0.5" />
+                            <point x="0.8505" y="0.8505" />
+                            <point x="0.5" y="0.9955" />
+                            <point x="0.1495" y="0.8505" />
+                            <point x="0.0045" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jerem\Desktop\Jeux VIdéo\Testsss\Get The Ball\Test_graphs\Disc.png">
+                        <collision-poly>
+                            <point x="0.1495" y="0.1495" />
+                            <point x="0.5" y="0.0045" />
+                            <point x="0.8505" y="0.1495" />
+                            <point x="0.9955" y="0.5" />
+                            <point x="0.8505" y="0.8505" />
+                            <point x="0.5" y="0.9955" />
+                            <point x="0.1495" y="0.8505" />
+                            <point x="0.0045" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved1" sid="960124932290766">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="180459939994227">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="786188690742716" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved2" sid="757851082620801">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="523630888007041">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196714974886463" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved3" sid="874457500838367">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="851896916166302">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587550594987250" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved4" sid="142440008714919">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="156208562848106">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176748185819731" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved5" sid="811601327338227">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="572914395871932">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145907471206305" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved6" sid="568759701570467">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="865297097948722">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="157854461432994" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved7" sid="315690170236826">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="150503633978484">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127339634632955" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved8" sid="584560550543502">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="245844534814003">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464391058811023" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved9" sid="384790766198657">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="587286381083081">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205275914462243" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved10" sid="457809258423307">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="380293049912375">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372113350705935" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved11" sid="481577664758020">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="765587488425858">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="467698001649958" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved12" sid="441707030009998">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="727656140770512">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476021752325520" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Approuved13" sid="616760830511929">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="897509680101027">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650492896206108" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
@@ -798,6 +1166,8 @@
     <global-instances>
         <global-instance type="Keyboard" uid="4" />
         <global-instance type="Browser" uid="28" />
+        <global-instance type="Mouse" uid="436" />
+        <global-instance type="Function" uid="437" />
     </global-instances>
     <sounds-folder />
     <music-folder />
