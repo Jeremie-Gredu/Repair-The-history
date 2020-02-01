@@ -11,10 +11,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Present_0</layout>
-        <layout active="1" order="3">BattleField_0</layout>
+        <layout order="3">BattleField_0</layout>
         <event-sheet order="1">Present-s-EV</event-sheet>
         <event-sheet order="2">Historian_control_EV</event-sheet>
-        <event-sheet order="4">BattleField_0_EV</event-sheet>
+        <event-sheet active="1" order="4">BattleField_0_EV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,6 +30,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Perso/" />
         <folder expanded="1" path="object-folder/PresentEnvironement/" />
         <folder expanded="1" path="object-folder/ScriptMoves/" />
+        <folder expanded="1" path="object-folder/Date_0_Environement/" />
+        <folder expanded="1" path="object-folder/Date_0_Environement/Dialogues/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -39,19 +41,62 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Historian/" />
         <folder expanded="1" path="animation-folder/Camera/" />
         <folder expanded="1" path="animation-folder/Wall/" />
+        <folder expanded="1" path="animation-folder/Cadave_Bleu/" />
+        <folder expanded="1" path="animation-folder/Commandant_Bleu/" />
+        <folder expanded="1" path="animation-folder/Commandant_Jaune/" />
+        <folder expanded="1" path="animation-folder/Mort_Jaune/" />
+        <folder expanded="1" path="animation-folder/Soldat_Bleu/" />
+        <folder expanded="1" path="animation-folder/Soldat_Jaune/" />
+        <folder expanded="1" path="animation-folder/Field_TimeMachine/" />
+        <folder expanded="1" path="animation-folder/TextBackground/" />
         <folder expanded="1" path="animation-folder/Scientist/" />
         <folder expanded="1" path="animation-folder/JeanMi2/" />
         <folder expanded="1" path="animation-folder/BarFloor/" />
         <folder expanded="1" path="animation-folder/BlackScreenIsolation/" />
         <folder expanded="1" path="animation-folder/caveGround/" />
+        <folder expanded="1" path="animation-folder/Police__0/" />
+        <folder expanded="1" path="animation-folder/Police__1/" />
+        <folder expanded="1" path="animation-folder/Policemen_zone/" />
+        <folder expanded="1" path="animation-folder/TimeMachine/" />
         <folder expanded="1" path="animation-folder/CtrlCam/" />
         <folder expanded="1" path="animation-folder/CtrlLeft/" />
         <folder expanded="1" path="animation-folder/CtrlStop/" />
         <folder expanded="1" path="animation-folder/CtrlUp/" />
         <folder expanded="1" path="animation-folder/Ctrl/" />
-        <folder expanded="1" path="animation-folder/TimeMachine/" />
-        <folder expanded="1" path="animation-folder/Police__0/" />
-        <folder expanded="1" path="animation-folder/Policemen_zone/" />
-        <folder expanded="1" path="animation-folder/Police__1/" />
+        <folder expanded="1" path="animation-folder/Arbre_pendus/" />
+        <folder expanded="1" path="animation-folder/Commandemant/" />
+        <folder expanded="1" path="animation-folder/Champs/" />
+        <folder expanded="1" path="animation-folder/GrosCanon/" />
+        <folder expanded="1" path="animation-folder/Hopital/" />
+        <folder expanded="1" path="animation-folder/Batiment/" />
+        <folder expanded="1" path="animation-folder/Jeep/" />
+        <folder expanded="1" path="animation-folder/Mine_Jaune/" />
+        <folder expanded="1" path="animation-folder/Mitrailleuse/" />
+        <folder expanded="1" path="animation-folder/Ploton_Execution/" />
+        <folder expanded="1" path="animation-folder/SacSable/" />
+        <folder expanded="1" path="animation-folder/Obus/" />
+        <folder expanded="1" path="animation-folder/Tank/" />
+        <folder expanded="1" path="animation-folder/Blue_Canon_Zone/" />
+        <folder expanded="1" path="animation-folder/Blue_Command_Zone/" />
+        <folder expanded="1" path="animation-folder/Blue_Dead_Zone/" />
+        <folder expanded="1" path="animation-folder/Blue_Drill_Zone/" />
+        <folder expanded="1" path="animation-folder/Blue_Drill_Zone2/" />
+        <folder expanded="1" path="animation-folder/Blue_Execution_Zone/" />
+        <folder expanded="1" path="animation-folder/Blue_fetch/" />
+        <folder expanded="1" path="animation-folder/Blue_goHome_Zone/" />
+        <folder expanded="1" path="animation-folder/Blue_Killing_Zone/" />
+        <folder expanded="1" path="animation-folder/Blue_Scars_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_badWapon_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Canon_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Command_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Drill_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Guard_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Guard_Zone2/" />
+        <folder expanded="1" path="animation-folder/Yellow_HangingCorps_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Sceared_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Wounded_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_WoundedMan_Zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Doctor_zone/" />
+        <folder expanded="1" path="animation-folder/Yellow_Mines/" />
     </folders-expanded>
 </c2uistate>
