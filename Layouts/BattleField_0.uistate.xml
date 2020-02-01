@@ -4,15 +4,15 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>3971.92</position-x>
-        <position-y>1824.73</position-y>
-        <position-z>164.87</position-z>
-        <lookat-x>3971.92</lookat-x>
-        <lookat-y>1824.73</lookat-y>
+        <position-x>4395.82</position-x>
+        <position-y>1790.56</position-y>
+        <position-z>123.87</position-z>
+        <lookat-x>4395.82</lookat-x>
+        <lookat-y>1790.56</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
-    <show-grid>0</show-grid>
+    <show-grid>1</show-grid>
     <snap-width>32</snap-width>
     <snap-height>32</snap-height>
     <show-collision-polys>0</show-collision-polys>
@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <active-layer name="Book" />
     <layers>
         <layer locked="1" name="PHYS" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Game" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Game" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="ScriptBoxes" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Texts" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Book" parallax-in-editor="0" visible="1" />
