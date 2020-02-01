@@ -66,3 +66,16 @@ level 1:
 -21- *agony sceams*
 -22- *laughing*
 -23- *laughing*
+
+end game:
+scientist:
+ah just in time, the police is here, quick give me your notes.
+
+policeman:
+In the name of the blue soveregin state, give us those papers.
+
+endings:
+1) BB you backed an the state view of the past, you bacome a famous historian and win many prices.
+2) YB you went against the state view of the past, you fall in disgrace in the eyes of your pears.
+3) BY you backed the state view of the past, they somehow learn of your reaserch and offer you a award. bu you never made it to the podiom.
+4) YY you went against the state view of the past, the rebels start un a rebelion and are near overthrowing the blues.
