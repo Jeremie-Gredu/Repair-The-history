@@ -1086,6 +1086,69 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <comment>TP</comment>
+                <event-block sid="861356438072744">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="531364899260050" type="Historian">
+                            <param id="0" name="Object">Field_TimeMachine</param>
+                        </condition>
+                        <condition id="-7" name="Compare time" sid="162685042789771" type="System">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Time (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="701670047826155" type="TP_txt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="108762551862927">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="655255055509388" type="Historian">
+                            <param id="0" name="Object">Field_TimeMachine</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="588796135071451" type="TP_txt">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="926084055189939">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="230617050486301" type="TextBackground">
+                            <param id="0" name="Object">Field_TimeMachine</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="734475926083189" type="Historian">
+                            <param id="0" name="Object">Field_TimeMachine</param>
+                        </condition>
+                        <condition id="-7" name="Compare time" sid="825890792090451" type="System">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Time (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="242212791698583" type="TextBackground">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="255360558326784">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="130945302167492" type="TextBackground">
+                            <param id="0" name="Object">Field_TimeMachine</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="349045409971714" type="Historian">
+                            <param id="0" name="Object">Field_TimeMachine</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="789445759141605" type="TextBackground">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="819888623099078" title="Book Interaction _1">
@@ -1094,7 +1157,12 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="206370758420063" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Add key" sid="507412928080204" type="SmalEvents">
+                            <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="998964882691806">
                             <conditions />
@@ -1577,7 +1645,7 @@
                                     <sub-events>
                                         <event-block sid="717619407103946">
                                             <conditions>
-                                                <condition id="-10" name="Compare opacity" sid="191310036457351" type="Chemical">
+                                                <condition id="-10" name="Compare opacity" sid="191310036457351" type="BombesVolees">
                                                     <param id="0" name="Comparison">0</param>
                                                     <param id="1" name="Opacity">100</param>
                                                 </condition>
@@ -1589,14 +1657,14 @@
                                                 <action id="5" name="Set frame" sid="794447192482189" type="Approuved6">
                                                     <param id="0" name="Frame number">1</param>
                                                 </action>
-                                                <action id="-16" name="Set opacity" sid="904023144984183" type="Chemical">
+                                                <action id="-16" name="Set opacity" sid="904023144984183" type="BombesVolees">
                                                     <param id="0" name="Opacity">40</param>
                                                 </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="886730217279815">
                                             <conditions>
-                                                <condition id="-10" name="Compare opacity" sid="707350240386588" type="Chemical">
+                                                <condition id="-10" name="Compare opacity" sid="707350240386588" type="BombesVolees">
                                                     <param id="0" name="Comparison">2</param>
                                                     <param id="1" name="Opacity">100</param>
                                                 </condition>
@@ -1605,7 +1673,7 @@
                                                 <action id="-16" name="Wait" sid="301749368438801" type="System">
                                                     <param id="0" name="Seconds">0.01</param>
                                                 </action>
-                                                <action id="-16" name="Set opacity" sid="866001295837559" type="Chemical">
+                                                <action id="-16" name="Set opacity" sid="866001295837559" type="BombesVolees">
                                                     <param id="0" name="Opacity">100</param>
                                                 </action>
                                                 <action id="5" name="Set frame" sid="961984714047591" type="Approuved6">
@@ -2278,6 +2346,235 @@
                         </event-group>
                     </sub-events>
                 </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="634495674889267" title="Go Back To Present">
+            <sub-events>
+                <event-block sid="730434565452212">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="542417332316428" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="240559077559301" type="Historian">
+                            <param id="0" name="Object">Field_TimeMachine</param>
+                        </condition>
+                        <condition id="-7" name="Compare time" sid="414503574454810" type="System">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Time (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set key" sid="334484247353788" type="SmalEvents">
+                            <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="333216241353673">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="406865497079197" type="AfterEffects">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="949365580216847" type="AfterEffects" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="151887071155445" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="788859787962168">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="641964765572323" type="BombAllies">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="661779918309734" type="BombAllies" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="132909216440357" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)-3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="542510663353592">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="749296042789084" type="BombesVolees">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="281118723517187" type="BombesVolees" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="870043235856454" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)-3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="889994435200248">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="937345173473282" type="ForcedToFight">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="947521829881201" type="ForcedToFight" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="253950537530648" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="985365676556436">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="350968999621002" type="KillingPrisoners">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="938144714149832" type="KillingPrisoners" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="174553858648701" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)-3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="838926573926249">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="437598628243463" type="Mines">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="310943323522462" type="Mines" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="385143779310319" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="833164976406879">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="637910025454510" type="Pendus">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="227916830568949" type="Pendus" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="608247874484977" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="865885363477749">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="314370002074262" type="SentWounded">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="280927899965755" type="SentWounded" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="986773566661000" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="908406593127056">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="373504951712347" type="Torture">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="335255554840733" type="Torture" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="712727337427625" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="122392644255667">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="201510510389914" type="Chemical">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="474205313430509" type="Chemical" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="168480355582708" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="604329281594206">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="227667376338976" type="StolenCanon">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="705784623895247" type="StolenCanon" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="319519046036327" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="710270448344350">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="638871172769046" type="Hostages">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="190067027341201" type="Hostages" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="986012539558685" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="267700344277592">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="155956488412292" type="ToMuchPain">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="349236572316249" type="ToMuchPain" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="798565307608730" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Value">SmalEvents.Get(&quot;Evironement_1&quot;)+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="674260566044896">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Set text" sid="608127646059705" type="TP_txt">
+                                    <param id="0" name="Text">SmalEvents.Get(&quot;Evironement_1&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
     </events>

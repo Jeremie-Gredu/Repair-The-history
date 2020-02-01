@@ -9972,7 +9972,7 @@
                 </instance>
                 <instance type="TextBackground" uid="395">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -9980,43 +9980,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4960</x>
+                        <x>4128</x>
                         <y>1888</y>
                         <z>0</z>
                         <width>192</width>
-                        <height>96</height>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0.200000003</opacity>
-                    </world>
-                </instance>
-                <instance type="Yellow_Soldier" uid="397">
-                    <properties>
-                        <text>we&apos;ll never gonna hold them back.</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-21.6,400,0</font>
-                        <color>255,255,102</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4960</x>
-                        <y>1888</y>
-                        <z>0</z>
-                        <width>192</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="TextBackground" uid="396">
@@ -10274,6 +10247,33 @@
                         <z>0</z>
                         <width>192</width>
                         <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TP_txt" uid="475">
+                    <properties>
+                        <text>Are you done  [E]  ?</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Ink Free,-22.4,400,0</font>
+                        <color>0,153,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4128</x>
+                        <y>1888</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

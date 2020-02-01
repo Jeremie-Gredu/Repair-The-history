@@ -749,6 +749,17 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Yellow_Sceared_Zone2" sid="480756476466297">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261160740050099" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TP_txt" sid="544038616935082">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-type name="Keyboard" sid="480272143302680">
             <plugin id="Keyboard" />
