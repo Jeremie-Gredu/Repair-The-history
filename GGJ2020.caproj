@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -738,6 +739,50 @@
         </object-type>
         <object-type name="Browser" sid="978876329546999">
             <plugin id="Browser" />
+        </object-type>
+        <object-type name="Book" sid="729283509360116">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="476633585477828">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692294513091115" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501592" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\Book\Carnet.png">
+                        <collision-poly>
+                            <point x="0.259352" y="0.00477707" />
+                            <point x="0.5" y="0.0286624" />
+                            <point x="0.726933" y="0.022293" />
+                            <point x="0.996259" y="0.5" />
+                            <point x="0.726933" y="0.979299" />
+                            <point x="0.274314" y="0.977707" />
+                            <point x="0.00374065" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlackBackGound" sid="757791320309663">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="123665658239627">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="749148111365674" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BookThings" sid="576109674693241">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="763436461162784">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />

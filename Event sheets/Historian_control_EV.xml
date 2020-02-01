@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Historian_control_EV</name>
     <events>
-        <event-group description="" sid="572909696118663" title="Mouvement">
+        <event-group description="" sid="572909696118663" title="Mouvement + Book">
             <sub-events>
                 <event-block sid="959224688590451">
                     <conditions>
@@ -139,6 +139,74 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>book</comment>
+                <event-block sid="921255600996028">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="279469338715980" type="Historian">
+                            <param id="0" name="Instance variable">canMove</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="640293032185047">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="622784170386262" type="Keyboard">
+                                    <param id="0" name="Key">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="494168497635211" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="236056690614540" type="Historian">
+                                    <param id="0" name="Instance variable">canMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="287575101707749" type="Historian">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;stop&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="275888990913316" type="System">
+                                    <param id="0" name="Layer">&quot;Book&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="681392220257307">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="108406274764086" type="Historian">
+                            <param id="0" name="Instance variable">canMove</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="321136624031509" type="System">
+                            <param id="0" name="Layer">&quot;Book&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="984966782393975">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="228517343772350" type="Keyboard">
+                                    <param id="0" name="Key">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="614945310186813" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="314632780750709" type="System">
+                                    <param id="0" name="Layer">&quot;Book&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="786410086219093" type="Historian">
+                                    <param id="0" name="Instance variable">canMove</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="861054775710909" title="Start">
@@ -158,6 +226,22 @@
                         <action id="-4" name="Set layer visible" sid="649526891670624" type="System">
                             <param id="0" name="Layer">&quot;ScriptBoxes&quot;</param>
                             <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="127214520998963" type="System">
+                            <param id="0" name="Layer">&quot;Book&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="553360717716984" type="BlackBackGound">
+                            <param id="0" name="Pin to">Historian</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="778030117561098" type="Book">
+                            <param id="0" name="Pin to">BlackBackGound</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="784731653768243" type="BookThings">
+                            <param id="0" name="Pin to">Book</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
                 </event-block>
