@@ -4,15 +4,15 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>1663.36</position-x>
-        <position-y>1723.5</position-y>
-        <position-z>135.13</position-z>
-        <lookat-x>1663.36</lookat-x>
-        <lookat-y>1723.5</lookat-y>
+        <position-x>976.157</position-x>
+        <position-y>1959.34</position-y>
+        <position-z>111.678</position-z>
+        <lookat-x>976.157</lookat-x>
+        <lookat-y>1959.34</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
-    <show-grid>0</show-grid>
+    <show-grid>1</show-grid>
     <snap-width>32</snap-width>
     <snap-height>32</snap-height>
     <show-collision-polys>0</show-collision-polys>
@@ -23,13 +23,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="ScriptBoxes" />
+    <active-layer name="Book" />
     <layers>
         <layer locked="1" name="PHYS" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Basement" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="ScriptBoxes" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="ScriptBoxes" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Textes" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Street" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Book" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Book" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
