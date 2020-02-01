@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Player-control</name>
+    <name>Historian_control_EV</name>
     <events>
         <event-group description="" sid="572909696118663" title="Mouvement">
             <sub-events>

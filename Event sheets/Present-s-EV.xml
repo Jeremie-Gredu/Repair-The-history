@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Present</name>
+    <name>Present-s-EV</name>
     <events>
-        <include>Player-control</include>
+        <include>Historian_control_EV</include>
         <event-group description="" sid="314204084957273" title="Dialogues">
             <sub-events>
                 <event-group description="" sid="357374311510797" title="Street_Base">

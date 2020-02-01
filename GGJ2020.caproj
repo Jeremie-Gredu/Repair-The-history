@@ -265,10 +265,12 @@
     <families />
     <layout-folder>
         <layout>Present_0.xml</layout>
+        <layout>BattleField_0.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Present.xml</event-sheet>
-        <event-sheet>Player-control.xml</event-sheet>
+        <event-sheet>Present-s-EV.xml</event-sheet>
+        <event-sheet>Historian_control_EV.xml</event-sheet>
+        <event-sheet>BattleField_0_EV.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />

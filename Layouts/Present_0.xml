@@ -2,7 +2,7 @@
 <c2layout>
     <name>Present_0</name>
     <sid>8873350371196689</sid>
-    <event-sheet>Present</event-sheet>
+    <event-sheet>Present-s-EV</event-sheet>
     <size>
         <width>4000</width>
         <height>4000</height>
@@ -944,8 +944,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>928</x>
-                        <y>3104</y>
+                        <x>3040</x>
+                        <y>2432</y>
                         <z>0</z>
                         <width>60</width>
                         <height>60</height>
@@ -984,8 +984,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>928</x>
-                        <y>3104</y>
+                        <x>3040</x>
+                        <y>2432</y>
                         <z>0</z>
                         <width>5</width>
                         <height>5</height>
