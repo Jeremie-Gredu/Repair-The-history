@@ -216,12 +216,9 @@
         <object-folder name="Perso">
             <object-type name="Scientist" sid="445553756128312">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="Text" sid="148559477095511" type="string" />
-                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="664835083950285" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.50027" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1162,6 +1159,114 @@
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.533333" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Trees" sid="619469358738874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="122644506685414" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\map arbre et lampadaire.png">
+                        <collision-poly>
+                            <point x="0.8025" y="0.8025" />
+                            <point x="0.5" y="0.023" />
+                            <point x="0.826" y="0.174" />
+                            <point x="0.81175" y="0.81175" />
+                            <point x="0.5" y="0.93875" />
+                            <point x="0.5705" y="0.4295" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\map arbre et lampadaire.png">
+                        <collision-poly>
+                            <point x="0.8025" y="0.8025" />
+                            <point x="0.5" y="0.023" />
+                            <point x="0.826" y="0.174" />
+                            <point x="0.81175" y="0.81175" />
+                            <point x="0.5" y="0.93875" />
+                            <point x="0.5705" y="0.4295" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StreetsBase" sid="915847464172625">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643255028284879" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\map présent.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\map past.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Moustache" sid="452505797939313">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="575691333160930">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636457496041666" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.4875" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\Scientifique.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Roof" sid="707041669566673">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240363364182825" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\BAR.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\BOWLING.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tag_Zone" sid="124726068496047">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="739579871417083" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tag_text" sid="258612702134410">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Tag_fromPast" sid="848152969650000">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="342702693560254" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\map tag du present.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="trash" sid="866888408067055">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897650270869928" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\map present canns.png" />
+                    <frame duration="1" hotspotX="-0.9375" hotspotY="-0.846154" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\map\map past can.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Trash_zone" sid="717595672584410">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776463049445942" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tag_text2" sid="653324437576328">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
