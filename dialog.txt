@@ -6,7 +6,11 @@ scientist:
 Hi, thanks for coming. Today is the big day, we finally test the time machine! I'm so excited.
 
 As you know, normally you would try to investigate the truth of a certain historical event in the period and location we've decided.
+
 But today we just calibrate the machine! So, you will go to the 5th of June 8B50 and take a newspaper with you when you come back.
+
+Try to take some notes of events you encounter, like what was this bar before it opens.
+
 when you have finished the mission, join the extraction point to ZZ9-plural-Z-apha
 
 ... [the player enter the time machine]
