@@ -6,13 +6,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>3500</position-x>
         <position-y>2000</position-y>
-        <position-z>895.43</position-z>
+        <position-z>694.443</position-z>
         <lookat-x>3500</lookat-x>
         <lookat-y>2000</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
-    <show-grid>1</show-grid>
+    <show-grid>0</show-grid>
     <snap-width>32</snap-width>
     <snap-height>32</snap-height>
     <show-collision-polys>0</show-collision-polys>
