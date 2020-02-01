@@ -4,6 +4,276 @@
     <name>BattleField_0_EV</name>
     <events>
         <include>Historian_control_EV</include>
-        <event-group description="" sid="918420784073687" title="Dialogues _ Date 1" />
+        <event-group description="" sid="918420784073687" title="Dialogues _ Date 1">
+            <sub-events>
+                <event-group description="" sid="852168728981661" title="BlueSide">
+                    <sub-events>
+                        <comment>Scars</comment>
+                        <event-block sid="253430814019105">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="268983705189703" type="Historian">
+                                    <param id="0" name="Object">Blue_Scars_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="106344735623696" type="Bleu_Sequelles">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="658290848956174">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="194405835439067" type="Historian">
+                                    <param id="0" name="Object">Blue_Scars_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="622584834677604" type="Bleu_Sequelles">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="160245010362570">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="794084887522408" type="TextBackground">
+                                    <param id="0" name="Object">Blue_Scars_Zone</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="313944533956891" type="Historian">
+                                    <param id="0" name="Object">Blue_Scars_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="338520300991471" type="TextBackground">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="828840792154741">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="556966502845042" type="TextBackground">
+                                    <param id="0" name="Object">Blue_Scars_Zone</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="120201998794577" type="Historian">
+                                    <param id="0" name="Object">Blue_Scars_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="808030284678760" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Dead Blue</comment>
+                        <event-block sid="682571926701594">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="494002810609311" type="Historian">
+                                    <param id="0" name="Object">Blue_Dead_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="203175480907925" type="Bleu_Dead">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="552709024439408">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="770201723566787" type="Historian">
+                                    <param id="0" name="Object">Blue_Dead_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="998161200399542" type="Bleu_Dead">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="374889191964304">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="640025144590358" type="TextBackground">
+                                    <param id="0" name="Object">Blue_Dead_Zone</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="137695052302486" type="Historian">
+                                    <param id="0" name="Object">Blue_Dead_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="476228687172192" type="TextBackground">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="120052507539973">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="517032034459052" type="TextBackground">
+                                    <param id="0" name="Object">Blue_Dead_Zone</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="569997483132419" type="Historian">
+                                    <param id="0" name="Object">Blue_Dead_Zone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="567047440017244" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="931568067347308">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="610048936144900" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="802264432896141">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="126470813179633" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="935779231428072">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="298793250357492" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="837012591452017">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="242354516213395" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="949418751567092">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="309000345854515" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="404552559789025">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="977494890808159" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="892863106368078">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="328371378600404" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="708279875510535">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="394681068350663" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="890380369465243">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="390828239826467" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="857050204925393">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="994732099010408" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="651845761279209">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="355878115012977" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="716092869285337">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="914455666460500" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="551167623856106">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="829752996103314" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="684100406811095">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="591070499532318" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="452761229321826">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="763817501567627" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="139680467197863">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="148097265858718" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="439428727646126">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="716839651728733" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="265902568091727">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="749493567633363" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="657140442577319">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="166778564717878" type="Historian">
+                            <param id="0" name="Object">Blue_Canon_Zone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="351098199162243" title="YellowSide" />
     </events>
 </c2eventsheet>
