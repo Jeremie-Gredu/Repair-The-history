@@ -1,18 +1,18 @@
 intro:
 sms- scientist:
-hey, we finished building the time machine, you can come to do the testing. it's in the alley behind the bar, go in the basement.
+Hey, we finished building the time machine. You can come to do the testing. it's in the alley behind the bar, go in the basement.
 
 scientist: 
-Hi, thanks for coming. Today is the big day, we finally test the time machine! I'm so exited.
+Hi, thanks for coming. Today is the big day, we finally test the time machine! I'm so excited.
 
-As you know, normaly you would try to investigate the truth of a certain historical event in the period and location we've decided.
-But today we just calibrate the machine! So, you will go to 8B50 5 june and take a newspaper with you when you come back.
+As you know, normally you would try to investigate the truth of a certain historical event in the period and location we've decided.
+But today we just calibrate the machine! So, you will go to the 5th of June 8B50 and take a newspaper with you when you come back.
 when you have finished the mission, join the extraction point to ZZ9-plural-Z-apha
 
 ... [the player enter the time machine]
 [the scientist go to the controls]
 
-oh, I almost forgot to tell you, please dont modify the past, we'r not sure of the consequances it can have.
+Oh, I almost forgot to tell you, please don't modify the past, we're not sure of the consequences it can have.
 [the scientist activate the machine]
 [sound and visual for the time travel]
 

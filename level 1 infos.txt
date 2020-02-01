@@ -1,8 +1,13 @@
 objective:
 -compare the history book with what you see.
 
-page 1:
--jaunes tinnent bleu en otages
--peloton d'ecution au bord d'une fosse comune (jaune exécute)
--plusieurs camps suramé de bleu
--
+history book:
+-Before the war, the yellows organized a raid in our territory. They stole a QF 4.7-inch canon and loads of munitions from one of our storage facilities in the east. Fortunately, they didn't stumble upon the prototypes of our mobile artillery vehicles.
+
+-In the heart of the conflict, the yellows used a restricted weapon. the chemical shells caused a lot of casualties in our ranks. the newspapers titled "the cold-blooded deployment of every device of modern science"
+to make things worse, a lot of the injured soldiers will suffer from permanent disfiguration. and a high risk of complications due to their exposure to the chemicals.
+
+-During a quiet time between two assaults, when our troops were regrouping for an assault with a new weapon, the yellows regrouped their prisoners and lined them up in a field. Then with little care, coldly executed their prisoners.
+
+personal notes:
+
