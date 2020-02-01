@@ -8637,10 +8637,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1133</x>
-                        <y>1837</y>
+                        <y>1853</y>
                         <z>0</z>
-                        <width>288</width>
-                        <height>288</height>
+                        <width>416</width>
+                        <height>320</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -8680,8 +8680,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>656</x>
-                        <y>2576</y>
+                        <x>640</x>
+                        <y>2592</y>
                         <z>0</z>
                         <width>640</width>
                         <height>608</height>
@@ -8846,7 +8846,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Yellow_WoundedMan_Zone2" uid="414">
+                <instance type="Yellow_Doctor_zone" uid="414">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -9032,11 +9032,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>6720</x>
-                        <y>3712</y>
+                        <x>6704</x>
+                        <y>3696</y>
                         <z>0</z>
-                        <width>480</width>
-                        <height>480</height>
+                        <width>512</width>
+                        <height>512</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -9262,33 +9262,6 @@
                         <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="Bleu_Drill_1" uid="371">
-                    <properties>
-                        <text>YEAH !!</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-21.6,400,0</font>
-                        <color>0,153,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1056</x>
-                        <y>1376</y>
-                        <z>0</z>
-                        <width>128</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="TextBackground" uid="372">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -9311,7 +9284,7 @@
                         <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="Bleu_Drill_2" uid="374">
+                <instance type="Bleu_Drill_home" uid="374">
                     <properties>
                         <text>I want to go home...</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -9495,7 +9468,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>928</x>
+                        <x>960</x>
                         <y>3360</y>
                         <z>0</z>
                         <width>320</width>
@@ -9505,33 +9478,6 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0.200000003</opacity>
-                    </world>
-                </instance>
-                <instance type="Bleu_Command_2" uid="362">
-                    <properties>
-                        <text>We don&apos;t deal with the enemy. Open fire on those supplies ! </text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-21.6,400,0</font>
-                        <color>51,153,204</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>928</x>
-                        <y>3360</y>
-                        <z>0</z>
-                        <width>320</width>
-                        <height>160</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="TextBackground" uid="355">
@@ -9573,33 +9519,6 @@
                     <world>
                         <x>1814</x>
                         <y>2943</y>
-                        <z>0</z>
-                        <width>288</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Bleu_Canon_2" uid="356">
-                    <properties>
-                        <text>Get ready...</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-21.6,400,0</font>
-                        <color>102,153,204</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1824</x>
-                        <y>3008</y>
                         <z>0</z>
                         <width>288</width>
                         <height>64</height>
@@ -9833,33 +9752,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Bleu_Dead2" uid="385">
-                    <properties>
-                        <text>*agony screams*</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-21.6,400,0</font>
-                        <color>51,153,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6496</x>
-                        <y>704</y>
-                        <z>0</z>
-                        <width>256</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="TextBackground" uid="386">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -9882,7 +9774,7 @@
                         <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="Yellow_Doctor" uid="388">
+                <instance type="Yellow_Wouded" uid="388">
                     <properties>
                         <text>I don&apos;t care if they suffer. when there are ready, get them on the field !</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -9931,7 +9823,7 @@
                         <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="Yellow_Doctor2" uid="390">
+                <instance type="Yellow_Doctor" uid="390">
                     <properties>
                         <text>One by one please !</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -9978,33 +9870,6 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0.200000003</opacity>
-                    </world>
-                </instance>
-                <instance type="Yellow_Doctor2" uid="391">
-                    <properties>
-                        <text>Hugh...</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-21.6,400,0</font>
-                        <color>255,255,102</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>5568</x>
-                        <y>736</y>
-                        <z>0</z>
-                        <width>128</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="TextBackground" uid="392">
@@ -10232,7 +10097,142 @@
                         <opacity>0.200000003</opacity>
                     </world>
                 </instance>
-                <instance type="Yellow_Guard" uid="401">
+                <instance type="Bleu_Drill_2" uid="423">
+                    <properties>
+                        <text>YEAH !</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Segoe Print,-21.6,400,0</font>
+                        <color>51,153,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1056</x>
+                        <y>1376</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bleu_Command_1" uid="371">
+                    <properties>
+                        <text>We don&apos;t deal with the enemy. Open fire on those supplies ! </text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Segoe Print,-21.6,400,0</font>
+                        <color>0,153,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>960</x>
+                        <y>3360</y>
+                        <z>0</z>
+                        <width>320</width>
+                        <height>160</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bleu_Canon_1" uid="362">
+                    <properties>
+                        <text>Get ready...</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Segoe Print,-21.6,400,0</font>
+                        <color>102,153,204</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1814</x>
+                        <y>3008</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Yellow_WoundedMan" uid="356">
+                    <properties>
+                        <text>Hugh...</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Segoe Print,-21.6,400,0</font>
+                        <color>255,255,102</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5568</x>
+                        <y>736</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Yellow_Command" uid="391">
+                    <properties>
+                        <text>*agony screams*</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Segoe Script,-22.4,400,0</font>
+                        <color>51,153,204</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6496</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>224</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Yellow_Guard2" uid="385">
                     <properties>
                         <text>Resistance is useless !</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -10257,6 +10257,28 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Yellow_Mines" uid="401">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4352</x>
+                        <y>608</y>
+                        <z>0</z>
+                        <width>384</width>
+                        <height>576</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>
