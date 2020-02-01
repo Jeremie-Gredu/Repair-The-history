@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
@@ -64,6 +65,7 @@
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="canMove" sid="980717697365833" type="boolean" />
+                    <instance-variable name="DirectionScript" sid="377864413896698" type="string" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="8Direction" sid="502507854147135">
@@ -84,6 +86,9 @@
                     </behavior-type>
                     <behavior-type name="Pin" sid="744256157837966">
                         <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Bullet" sid="449041859879116">
+                        <behavior id="Bullet" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -107,7 +112,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Perso">
-            <object-type name="JeanMi" sid="445553756128312">
+            <object-type name="Scientist" sid="445553756128312">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="Text" sid="148559477095511" type="string" />
@@ -129,44 +134,106 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ScientistText" sid="336533162672375">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="PresentEnvironement">
+            <object-type name="BarFloor" sid="919216766287818">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="475501165271068">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677244528548194" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BlackScreenIsolation" sid="887175225715785">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="512803294431590">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509202095492396" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="caveGround" sid="146389979937750">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204614418289384" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="ScriptMoves">
+            <object-type name="CtrlCam" sid="723949391520962">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="382952798852791">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511251569235996" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CtrlLeft" sid="289645850963574">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="337927170183081" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CtrlStop" sid="933290052097841">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="377102014930368" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CtrlUp" sid="244479755207611">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852689188260026" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Ctrl" sid="851853796354937">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670925858912158" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Keyboard" sid="480272143302680">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Text" sid="336533162672375">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="BarFloor" sid="919216766287818">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Fade" sid="475501165271068">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677244528548194" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="146389979937750">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204614418289384" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="BlackScreenIsolation" sid="887175225715785">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509202095492396" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Browser" sid="978876329546999">
             <plugin id="Browser" />
+        </object-type>
+        <object-type name="TimeMachine" sid="234540415587402">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="350550466790862" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
