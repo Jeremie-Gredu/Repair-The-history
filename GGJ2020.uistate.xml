@@ -31,6 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/PresentEnvironement/" />
         <folder expanded="1" path="object-folder/ScriptMoves/" />
         <folder expanded="1" path="object-folder/Date_0_Environement/" />
+        <folder expanded="1" path="object-folder/Date_0_Environement/Dialogues/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -40,39 +41,40 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Historian/" />
         <folder expanded="1" path="animation-folder/Camera/" />
         <folder expanded="1" path="animation-folder/Wall/" />
+        <folder expanded="1" path="animation-folder/Cadave_Bleu/" />
+        <folder expanded="1" path="animation-folder/Commandant_Bleu/" />
+        <folder expanded="1" path="animation-folder/Commandant_Jaune/" />
+        <folder expanded="1" path="animation-folder/Mort_Jaune/" />
+        <folder expanded="1" path="animation-folder/Soldat_Bleu/" />
+        <folder expanded="1" path="animation-folder/Soldat_Jaune/" />
+        <folder expanded="1" path="animation-folder/Field_TimeMachine/" />
+        <folder expanded="1" path="animation-folder/TextBackground/" />
         <folder expanded="1" path="animation-folder/Scientist/" />
         <folder expanded="1" path="animation-folder/JeanMi2/" />
         <folder expanded="1" path="animation-folder/BarFloor/" />
         <folder expanded="1" path="animation-folder/BlackScreenIsolation/" />
         <folder expanded="1" path="animation-folder/caveGround/" />
+        <folder expanded="1" path="animation-folder/Police__0/" />
+        <folder expanded="1" path="animation-folder/Police__1/" />
+        <folder expanded="1" path="animation-folder/Policemen_zone/" />
+        <folder expanded="1" path="animation-folder/TimeMachine/" />
         <folder expanded="1" path="animation-folder/CtrlCam/" />
         <folder expanded="1" path="animation-folder/CtrlLeft/" />
         <folder expanded="1" path="animation-folder/CtrlStop/" />
         <folder expanded="1" path="animation-folder/CtrlUp/" />
         <folder expanded="1" path="animation-folder/Ctrl/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/TimeMachine/" />
-        <folder expanded="1" path="animation-folder/Police__0/" />
-        <folder expanded="1" path="animation-folder/Policemen_zone/" />
-        <folder expanded="1" path="animation-folder/Police__1/" />
-        <folder expanded="1" path="animation-folder/SacSable/" />
-        <folder expanded="1" path="animation-folder/Mitrailleuse/" />
-        <folder expanded="1" path="animation-folder/Jeep/" />
-        <folder expanded="1" path="animation-folder/GrosCanon/" />
-        <folder expanded="1" path="animation-folder/Crops/" />
-        <folder expanded="1" path="animation-folder/Hopital/" />
-        <folder expanded="1" path="animation-folder/Commandemant/" />
-        <folder expanded="1" path="animation-folder/Obus/" />
-        <folder expanded="1" path="animation-folder/Hopital2/" />
         <folder expanded="1" path="animation-folder/Arbre_pendus/" />
-        <folder expanded="1" path="animation-folder/Tank/" />
-        <folder expanded="1" path="animation-folder/Ploton_Execution/" />
-        <folder expanded="1" path="animation-folder/Soldat_Bleu/" />
-        <folder expanded="1" path="animation-folder/Commandant_Bleu/" />
-        <folder expanded="1" path="animation-folder/Cadave_Bleu/" />
-        <folder expanded="1" path="animation-folder/Soldat_Jaune/" />
-        <folder expanded="1" path="animation-folder/Commandant_Jaune/" />
-        <folder expanded="1" path="animation-folder/Mort_Jaune/" />
+        <folder expanded="1" path="animation-folder/Commandemant/" />
+        <folder expanded="1" path="animation-folder/Champs/" />
+        <folder expanded="1" path="animation-folder/GrosCanon/" />
+        <folder expanded="1" path="animation-folder/Hopital/" />
+        <folder expanded="1" path="animation-folder/Batiment/" />
+        <folder expanded="1" path="animation-folder/Jeep/" />
         <folder expanded="1" path="animation-folder/Mine_Jaune/" />
+        <folder expanded="1" path="animation-folder/Mitrailleuse/" />
+        <folder expanded="1" path="animation-folder/Ploton_Execution/" />
+        <folder expanded="1" path="animation-folder/SacSable/" />
+        <folder expanded="1" path="animation-folder/Obus/" />
+        <folder expanded="1" path="animation-folder/Tank/" />
     </folders-expanded>
 </c2uistate>
