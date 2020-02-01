@@ -12,9 +12,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Present_0</layout>
         <layout order="3">BattleField_0</layout>
-        <event-sheet order="1">Present-s-EV</event-sheet>
+        <event-sheet active="1" order="1">Present-s-EV</event-sheet>
         <event-sheet order="2">Historian_control_EV</event-sheet>
-        <event-sheet active="1" order="4">BattleField_0_EV</event-sheet>
+        <event-sheet order="4">BattleField_0_EV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -117,5 +117,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Approuved11/" />
         <folder expanded="1" path="animation-folder/Approuved12/" />
         <folder expanded="1" path="animation-folder/Approuved13/" />
+        <folder expanded="1" path="animation-folder/Trees/" />
+        <folder expanded="1" path="animation-folder/StreetsBase/" />
+        <folder expanded="1" path="animation-folder/Moustache/" />
+        <folder expanded="1" path="animation-folder/Roof/" />
+        <folder expanded="1" path="animation-folder/tag_Zone/" />
+        <folder expanded="1" path="animation-folder/Tag_fromPast/" />
+        <folder expanded="1" path="animation-folder/trash/" />
+        <folder expanded="1" path="animation-folder/Trash_zone/" />
     </folders-expanded>
 </c2uistate>
