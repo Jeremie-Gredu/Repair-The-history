@@ -99,6 +99,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Yellow_WoundedMan_Zone/" />
         <folder expanded="1" path="animation-folder/Yellow_Doctor_zone/" />
         <folder expanded="1" path="animation-folder/Yellow_Mines/" />
+        <folder expanded="1" path="animation-folder/Yellow_Sceared_Zone2/" />
         <folder expanded="1" path="animation-folder/Book/" />
         <folder expanded="1" path="animation-folder/BlackBackGound/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
