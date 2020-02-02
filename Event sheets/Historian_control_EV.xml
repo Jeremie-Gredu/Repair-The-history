@@ -170,6 +170,10 @@
                                     <param id="0" name="Layer">&quot;Book&quot;</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
+                                <action disabled="1" id="-3" name="Set position" sid="308421033191079" type="markSign">
+                                    <param id="0" name="X">-100</param>
+                                    <param id="1" name="Y">-100</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
