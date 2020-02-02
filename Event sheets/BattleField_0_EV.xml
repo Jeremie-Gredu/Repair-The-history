@@ -2000,43 +2000,305 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block any="1" sid="852039409642369">
+                                <event-block sid="852039409642369">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="852422549734046" type="HistorianAnim">
                                             <param id="0" name="Object">Yellow_Wounded_Zone</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="614789042548908" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="182155874644790">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="903114581230328" type="LightSmall2">
+                                                    <param id="0" name="Object">Yellow_Wounded_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="315182107213991" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="943087868100869" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="155688426313220" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="485143129875428" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="329043783685009" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="252900824634505">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="342136007847929" type="HistorianAnim">
                                             <param id="0" name="Object">Blue_goHome_Zone</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="773891471730202" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="552992005749485">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="455695027767963" type="LightSmall2">
+                                                    <param id="0" name="Object">Blue_goHome_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="335028647054186" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="528063790499924" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="175341377103299" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="999243178692390" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="155428603326877" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="251242218396930">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="935699829162018" type="HistorianAnim">
                                             <param id="0" name="Object">Blue_Execution_Zone</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="846647763788208" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="525861665922301">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="495222695826866" type="LightSmall2">
+                                                    <param id="0" name="Object">Blue_Execution_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="325900366180692" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="284861831086830" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="245696761807886" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="242048770778210" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="940544483125015" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="212314306672081">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="480455461693397" type="HistorianAnim">
                                             <param id="0" name="Object">Yellow_HangingCorps_Zone</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="112452943151328" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="818870132513347">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="914721708936383" type="LightSmall2">
+                                                    <param id="0" name="Object">Yellow_HangingCorps_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="217250133267237" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="321049923600713" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="421245087260885" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="379934870683263" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="768779655483811" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="455925452916980">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="889409317771182" type="HistorianAnim">
                                             <param id="0" name="Object">Yellow_Mines</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="429922668409321" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="274851511956353">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="524140425879045" type="LightSmall2">
+                                                    <param id="0" name="Object">Yellow_Mines</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="418293282852058" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="379901346912103" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="637053618096340" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="426873170410212" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="339435565056994" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="326719442540508">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="467678272300753" type="HistorianAnim">
                                             <param id="0" name="Object">Yellow_badWapon_Zone</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="237211251521812" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="818509740651599">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="134591706799917" type="LightSmall2">
+                                                    <param id="0" name="Object">Yellow_badWapon_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="521145387297864" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="243015201465807" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="696194125992362" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="956817165379792" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="474987106680306" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="183251103059634">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="639179880634919" type="HistorianAnim">
                                             <param id="0" name="Object">Blue_Command_Zone</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="659113021155429" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="775240766443010">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="576168551402927" type="LightSmall2">
+                                                    <param id="0" name="Object">Blue_Command_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="955464619415695" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="461927712438810" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="611270821265300" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="597944406914982" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="171608273890211" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="600311153684477">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="865966133216286" type="HistorianAnim">
                                             <param id="0" name="Object">Yellow_Command_Zone</param>
                                         </condition>
-                                        <condition id="0" name="On collision with another object" sid="738573666207487" type="HistorianAnim">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="868757026643465">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="749138370717419" type="LightSmall2">
+                                                    <param id="0" name="Object">Yellow_Command_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="485350802045592" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="840468508183644" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="763856450161442" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="385402180782058" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="895908773463600" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="542275816579150">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="860546823152193" type="HistorianAnim">
                                             <param id="0" name="Object">Blue_Scars_Zone</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action behavior="Flash" id="0" name="Flash" sid="568537199963709" type="HistorianAnim">
-                                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                                            <param id="2" name="Duration">1.0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="657504047193457">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="207041234242140" type="LightSmall2">
+                                                    <param id="0" name="Object">Blue_Scars_Zone</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="864585195522650" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="888260357539970" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="260927023055180" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="729312037570423">
                                     <conditions>

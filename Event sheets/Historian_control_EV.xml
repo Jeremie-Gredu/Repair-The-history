@@ -417,6 +417,10 @@
                             <param id="0" name="Pin to">MoveBall</param>
                             <param id="1" name="Mode">0</param>
                         </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="988524846794463" type="LightSmall">
+                            <param id="0" name="Pin to">HistorianAnim</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

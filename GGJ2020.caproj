@@ -1465,6 +1465,66 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LightSmall" sid="725269425869314">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="961044553553610">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="opa" sid="191609697454947">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="si" sid="330751147819054">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398949279428580" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502538" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\Light&amp;Effects\shadow242.png">
+                        <collision-poly>
+                            <point x="0.231959" y="0.228426" />
+                            <point x="0.5" y="0.111675" />
+                            <point x="0.778351" y="0.218274" />
+                            <point x="0.896907" y="0.497462" />
+                            <point x="0.773196" y="0.77665" />
+                            <point x="0.5" y="0.878173" />
+                            <point x="0.237113" y="0.766497" />
+                            <point x="0.123711" y="0.497462" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LightSmall2" sid="462916138107046">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="381784504821611">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="opa" sid="219822654943459">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="si" sid="960917440563001">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465789373363218" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502538" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\Light&amp;Effects\shadow242.png">
+                        <collision-poly>
+                            <point x="0.231959" y="0.228426" />
+                            <point x="0.5" y="0.111675" />
+                            <point x="0.778351" y="0.218274" />
+                            <point x="0.896907" y="0.497462" />
+                            <point x="0.773196" y="0.77665" />
+                            <point x="0.5" y="0.878173" />
+                            <point x="0.237113" y="0.766497" />
+                            <point x="0.123711" y="0.497462" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
