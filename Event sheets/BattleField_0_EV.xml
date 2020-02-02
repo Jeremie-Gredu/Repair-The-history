@@ -2287,13 +2287,19 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action behavior="opa" id="1" name="Set period" sid="864585195522650" type="LightSmall2">
+                                                <action behavior="opa" id="1" name="Set period" sid="911824229901812" type="LightSmall2">
                                                     <param id="0" name="Period">1</param>
                                                 </action>
-                                                <action id="-16" name="Wait" sid="888260357539970" type="System">
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="947976987176048" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="719544783160737" type="System">
                                                     <param id="0" name="Seconds">4</param>
                                                 </action>
-                                                <action behavior="opa" id="1" name="Set period" sid="260927023055180" type="LightSmall2">
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="983264043363429" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="298152377452650" type="LightSmall2">
                                                     <param id="0" name="Period">8</param>
                                                 </action>
                                             </actions>
