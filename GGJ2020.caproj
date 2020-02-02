@@ -23,6 +23,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -66,7 +67,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Game basics">
-            <object-type name="Historian" sid="343213214888284">
+            <object-type name="HistorianAnim" sid="343213214888284">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="canMove" sid="980717697365833" type="boolean" />
@@ -76,10 +77,146 @@
                     <behavior-type name="8Direction" sid="502507854147135">
                         <behavior id="EightDir" />
                     </behavior-type>
+                    <behavior-type name="Flash" sid="614907287615600">
+                        <behavior id="Flash" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984461198951670" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="4" loop="0" name="DOWN" pingpong="0" repeatcount="1" repeatto="0" sid="493145237425093" speed="5">
+                        <frame duration="1" hotspotX="0.495851" hotspotY="0.52932" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.496366" hotspotY="0.529564" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495851" hotspotY="0.52932">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495842" hotspotY="0.529199" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="0" name="UP" pingpong="0" repeatcount="1" repeatto="0" sid="355709556988749" speed="5">
+                        <frame duration="1" hotspotX="0.495851" hotspotY="0.52932" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495842" hotspotY="0.529199" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495851" hotspotY="0.52932">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495851" hotspotY="0.52929" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="0" name="LEFT" pingpong="0" repeatcount="1" repeatto="0" sid="872201046172503" speed="5">
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.52938" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.529189" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.52938">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.529158" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="0" name="RIGHT" pingpong="0" repeatcount="1" repeatto="0" sid="444882089704483" speed="5">
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.52938" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.529158" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.52938">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.495895" hotspotY="0.529189" original-source="C:\Users\jerem\Documents\GitHub\Repair-The-history\graphisme\perso\historien.png">
+                            <collision-poly>
+                                <point x="0.215768" y="0.667099" />
+                                <point x="0.809129" y="0.678692" />
+                                <point x="0.809129" y="0.995848" />
+                                <point x="0.19917" y="1" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1290,6 +1427,41 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721163571132794" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MoveBall" sid="304653155845849">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="966914497429306">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="670286467473353">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195255428313314" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="450105237940998">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="888182551401667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502538" original-source="C:\Users\jerem\Desktop\Jeux VIdéo\Poulet Poulet Carnage\Graphs\Lights\shadow242.png">
+                        <collision-poly>
+                            <point x="0.231959" y="0.228426" />
+                            <point x="0.5" y="0.111675" />
+                            <point x="0.778351" y="0.218274" />
+                            <point x="0.896907" y="0.497462" />
+                            <point x="0.773196" y="0.77665" />
+                            <point x="0.5" y="0.878173" />
+                            <point x="0.237113" y="0.766497" />
+                            <point x="0.123711" y="0.497462" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

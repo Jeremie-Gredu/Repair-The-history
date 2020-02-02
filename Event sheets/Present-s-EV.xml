@@ -10,7 +10,7 @@
                     <sub-events>
                         <event-block sid="487389954202654">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="823177399954326" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="823177399954326" type="HistorianAnim">
                                     <param id="0" name="Object">Policemen_zone</param>
                                 </condition>
                             </conditions>
@@ -22,7 +22,7 @@
                         </event-block>
                         <event-block sid="797896765581286">
                             <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="721419694452288" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="721419694452288" type="HistorianAnim">
                                     <param id="0" name="Object">Policemen_zone</param>
                                 </condition>
                             </conditions>
@@ -37,7 +37,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="606472770301752" type="TextBackground">
                                     <param id="0" name="Object">Policemen_zone</param>
                                 </condition>
-                                <condition id="1" name="Is overlapping another object" sid="468830036175729" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="468830036175729" type="HistorianAnim">
                                     <param id="0" name="Object">Policemen_zone</param>
                                 </condition>
                             </conditions>
@@ -52,7 +52,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="703538216445590" type="TextBackground">
                                     <param id="0" name="Object">Policemen_zone</param>
                                 </condition>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="270857294674115" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="270857294674115" type="HistorianAnim">
                                     <param id="0" name="Object">Policemen_zone</param>
                                 </condition>
                             </conditions>
@@ -68,10 +68,10 @@
                     <sub-events>
                         <event-block sid="713075617389898">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="462636145495292" type="Historian">
+                                <condition id="0" name="On collision with another object" sid="462636145495292" type="HistorianAnim">
                                     <param id="0" name="Object">CtrlStop</param>
                                 </condition>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="115953067956689" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="115953067956689" type="HistorianAnim">
                                     <param id="0" name="Object">TimeMachine</param>
                                 </condition>
                                 <condition id="0" name="Compare value" sid="103994036258303" type="SmalEvents">
@@ -148,7 +148,7 @@
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
                                 <action id="0" name="Set text" sid="543836684814336" type="ScientistText">
-                                    <param id="0" name="Text">&quot;Try to take some notes of events you encounter, like what was this up floor bar before it opens. [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;Try to take some notes of events you encounter, was that lab always been a lab as I think ? [E]&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -158,7 +158,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="636075410169946" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;Try to take some notes of events you encounter, like what was this up floor bar before it opens. [E]&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;Try to take some notes of events you encounter, was that lab always been a lab as I think ? [E]&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -216,16 +216,30 @@
                                 <action id="-16" name="Wait" sid="276383016780729" type="System">
                                     <param id="0" name="Seconds">0.4</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="290892899234922" type="Historian">
+                                <action id="-10" name="Set value" sid="290892899234922" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
-                                    <param id="1" name="Value">&quot;down&quot;</param>
+                                    <param id="1" name="Value">&quot;DOWN&quot;</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="937277301481901" type="MoveBall">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="477821426395759" type="HistorianAnim">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="183155325408022" type="MoveBall">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="848979478616312">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="191053923960242" type="Historian">
+                                <condition id="0" name="On collision with another object" sid="191053923960242" type="HistorianAnim">
                                     <param id="0" name="Object">TimeMachine</param>
+                                </condition>
+                                <condition id="0" name="Compare value" sid="245619955470875" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;present1&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -248,14 +262,14 @@
                                 <action behavior="Sine" id="0" name="Set active" sid="875996352341972" type="Moustache">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="441038782437093" type="Historian">
+                                <action id="-10" name="Set value" sid="441038782437093" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Value">&quot;right&quot;</param>
                                 </action>
-                                <action behavior="8Direction" id="5" name="Set acceleration" sid="341863313993489" type="Historian">
+                                <action behavior="8Direction" id="5" name="Set acceleration" sid="341863313993489" type="HistorianAnim">
                                     <param id="0" name="Acceleration">350</param>
                                 </action>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="757420221321319" type="Historian">
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="757420221321319" type="HistorianAnim">
                                     <param id="0" name="Max Speed">99999</param>
                                 </action>
                             </actions>
@@ -267,43 +281,56 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="8Direction" id="5" name="Set acceleration" sid="228282372402232" type="Historian">
-                                            <param id="0" name="Acceleration">Historian.8Direction.Acceleration + 350</param>
+                                        <action behavior="8Direction" disabled="1" id="5" name="Set acceleration" sid="228282372402232" type="HistorianAnim">
+                                            <param id="0" name="Acceleration">HistorianAnim.8Direction.Acceleration + 350</param>
                                         </action>
+                                        <action id="-16" name="Wait" sid="266548736219090" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="1" name="Set key" sid="602553654844854" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                            <param id="1" name="Value">&quot;past1&quot;</param>
+                                        </action>
+                                        <action id="-26" name="Restart layout" sid="862066622224175" type="System" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="386557187365876">
+                        <event-block disabled="1" sid="386557187365876">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="316593812653880" type="Historian">
+                                <condition id="0" name="On collision with another object" sid="316593812653880" type="HistorianAnim">
                                     <param id="0" name="Object">Camera</param>
                                 </condition>
                                 <condition id="-10" name="Compare opacity" sid="399930157773481" type="BlackScreenIsolation">
                                     <param id="0" name="Comparison">0</param>
                                     <param id="1" name="Opacity">0</param>
                                 </condition>
+                                <condition id="0" name="Compare value" sid="847446278100126" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;present1&quot;</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-16" name="Wait" sid="545072927585821" type="System">
                                     <param id="0" name="Seconds">0.03</param>
                                 </action>
-                                <action behavior="8Direction" id="8" name="Set enabled" sid="908254096347042" type="Historian">
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="908254096347042" type="HistorianAnim">
                                     <param id="0" name="State">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="308683746745074" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="454938078584559" type="Historian" />
+                                <action id="-9" name="Destroy" sid="454938078584559" type="HistorianAnim" />
                                 <action id="-9" name="Destroy" sid="175672991945871" type="Camera" />
                                 <action id="-16" name="Wait" sid="500574889795601" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-26" name="Restart layout" sid="286861482568002" type="System" />
                                 <action id="1" name="Set key" sid="812113815815429" type="SmalEvents">
                                     <param id="0" name="Key">&quot;Present_1&quot;</param>
                                     <param id="1" name="Value">&quot;past1&quot;</param>
                                 </action>
+                                <action id="-26" name="Restart layout" sid="286861482568002" type="System" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -312,10 +339,10 @@
                     <sub-events>
                         <event-block sid="585317130105129">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="725878848909374" type="Historian">
+                                <condition id="0" name="On collision with another object" sid="725878848909374" type="HistorianAnim">
                                     <param id="0" name="Object">CtrlStop</param>
                                 </condition>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="848726140189290" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="848726140189290" type="HistorianAnim">
                                     <param id="0" name="Object">TimeMachine</param>
                                 </condition>
                                 <condition id="0" name="Compare value" sid="344349166598827" type="SmalEvents">
@@ -332,7 +359,7 @@
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="195392258663756" type="ScientistText">
-                                    <param id="0" name="Text">&quot;Hi, thanks for coming. Today is the big day, we finally test the time machine! I&apos;m so excited. [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;oh, you&apos;re still..... alive? [E...]&quot;</param>
                                 </action>
                                 <action behavior="Sine" id="0" name="Set active" sid="938568697453292" type="Moustache">
                                     <param id="0" name="State">1</param>
@@ -345,7 +372,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="483637430115889" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;Hi, thanks for coming. Today is the big day, we finally test the time machine! I&apos;m so excited. [E]&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;oh, you&apos;re still..... alive? [E...]&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -354,7 +381,10 @@
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
                                 <action id="0" name="Set text" sid="517548389949945" type="ScientistText">
-                                    <param id="0" name="Text">&quot;As you know, normally you would try to investigate the truth of a certain historical event in the period and location we&apos;ve decided. [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;...&quot;</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="690761590730610" type="Moustache">
+                                    <param id="0" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -364,7 +394,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="144640239721753" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;As you know, normally you would try to investigate the truth of a certain historical event in the period and location we&apos;ve decided. [E]&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;...&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -372,8 +402,74 @@
                                 <action id="-16" name="Wait" sid="703185099887796" type="System">
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="419178403842107" type="Moustache">
+                                    <param id="0" name="State">1</param>
+                                </action>
                                 <action id="0" name="Set text" sid="579607434785466" type="ScientistText">
-                                    <param id="0" name="Text">&quot;But today we just calibrate the machine! So, you will go to the 5th of June 8B50 and take a newspaper with you when you come back. [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;great, I... knew I coul. You could do it !&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="351718446798437">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="965954512535629" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="487920492135694" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;great, I... knew I coul. You could do it !&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="677515756144798" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="806714240112223" type="Moustache">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="204886859998779" type="ScientistText">
+                                    <param id="0" name="Text">&quot;....&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="444383241464737">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="759220824690373" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="717634721501525" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;....&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="850474022575724" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="659825655762527" type="Moustache">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="803258519941980" type="ScientistText">
+                                    <param id="0" name="Text">&quot;now that you&apos;re back, let&apos;s plan your real mission.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="828067299856775">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="547827585973654" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="821320151015397" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;now that you&apos;re back, let&apos;s plan your real mission.&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="522330302812934" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Set text" sid="998520183789691" type="ScientistText">
+                                    <param id="0" name="Text">&quot;you will be sent to the 25th of November 8B10, take the &apos;&apos;official history&apos;&apos; book related to this time and location.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -383,7 +479,7 @@
                                     <param id="0" name="Key">69</param>
                                 </condition>
                                 <condition id="0" name="Compare text" sid="117270120279971" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;But today we just calibrate the machine! So, you will go to the 5th of June 8B50 and take a newspaper with you when you come back. [E]&quot;</param>
+                                    <param id="0" name="Text to compare">&quot;you will be sent to the 25th of November 8B10, take the &apos;&apos;official history&apos;&apos; book related to this time and location.&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
@@ -392,47 +488,126 @@
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
                                 <action id="0" name="Set text" sid="247662139628146" type="ScientistText">
-                                    <param id="0" name="Text">&quot;Try to take some notes of events you encounter, like what was this up floor bar before it opens. [E]&quot;</param>
+                                    <param id="0" name="Text">&quot;obviously, Since the Blue ones are in charge here, we don&apos;t have the REAL version of the story.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="289451053620569">
+                        <event-block sid="219983815678361">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="889944341899444" type="Keyboard">
+                                <condition id="0" name="On key pressed" sid="735138580689366" type="Keyboard">
                                     <param id="0" name="Key">69</param>
                                 </condition>
-                                <condition id="0" name="Compare text" sid="422733564851514" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;Try to take some notes of events you encounter, like what was this up floor bar before it opens. [E]&quot;</param>
+                                <condition id="0" name="Compare text" sid="496250119030672" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;obviously, Since the Blue ones are in charge here, we don&apos;t have the REAL version of the story.&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-16" name="Wait" sid="123861376858299" type="System">
+                                <action id="-16" name="Wait" sid="503004116935843" type="System">
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
-                                <action id="0" name="Set text" sid="590823930029404" type="ScientistText">
-                                    <param id="0" name="Text">&quot;when you have finished the mission, join the extraction point. [E] &quot;</param>
+                                <action id="0" name="Set text" sid="333638044438626" type="ScientistText">
+                                    <param id="0" name="Text">&quot;Your assigned task is to fact check the different points of the official Bleu book... ....&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="155136993127155">
+                        <event-block sid="577111251615304">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="227615447870776" type="Keyboard">
+                                <condition id="0" name="On key pressed" sid="357964945046939" type="Keyboard">
                                     <param id="0" name="Key">69</param>
                                 </condition>
-                                <condition id="0" name="Compare text" sid="237742744222962" type="ScientistText">
-                                    <param id="0" name="Text to compare">&quot;when you have finished the mission, join the extraction point. [E] &quot;</param>
+                                <condition id="0" name="Compare text" sid="124075948877778" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;Your assigned task is to fact check the different points of the official Bleu book... ....&quot;</param>
                                     <param id="1" name="Case sensitivity">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-16" name="Wait" sid="502540930562033" type="System">
+                                <action id="-16" name="Wait" sid="897967247143388" type="System">
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="117655093988839" type="Moustache">
+                                <action id="0" name="Set text" sid="813565818335253" type="ScientistText">
+                                    <param id="0" name="Text">&quot;Yeah, we know that book is just a bunch of mombo jumbos, but Listen... I&apos;m sure they&apos;ve made terrible things !&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="260187619714907">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="143372962845094" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="511457357836806" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;Yeah, we know that book is just a bunch of mombo jumbos, but Listen... I&apos;m sure they&apos;ve made terrible things !&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="703617166245455" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Set text" sid="378154952238690" type="ScientistText">
+                                    <param id="0" name="Text">&quot;So use your NoteBook to bring back the truth !&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="160259616284694">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="828475278065591" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="290120792833600" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;So use your NoteBook to bring back the truth !&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="172278112531269" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Set text" sid="719552687409317" type="ScientistText">
+                                    <param id="0" name="Text">&quot;When you&apos;re done, come back and spread the truth among the poeple !&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="106436524897603">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="433209806887575" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="127079255178210" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;When you&apos;re done, come back and spread the truth among the poeple !&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="319115605415753" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action behavior="Sine" id="1" name="Set period" sid="764905667071093" type="Moustache">
+                                    <param id="0" name="Period">0.4</param>
+                                </action>
+                                <action id="0" name="Set text" sid="173195362102850" type="ScientistText">
+                                    <param id="0" name="Text">&quot;You are already our Hero...&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="377167942502022">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="823365885211289" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="394263705958186" type="ScientistText">
+                                    <param id="0" name="Text to compare">&quot;You are already our Hero...&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="666982702293842" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="377742723274905" type="Moustache">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action id="0" name="Set text" sid="825863264723541" type="ScientistText">
+                                <action id="0" name="Set text" sid="720825807683763" type="ScientistText">
                                     <param id="0" name="Text">&quot;..... [E]&quot;</param>
                                 </action>
                             </actions>
@@ -460,16 +635,30 @@
                                 <action id="-16" name="Wait" sid="573745055516916" type="System">
                                     <param id="0" name="Seconds">0.4</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="997539875088155" type="Historian">
+                                <action id="-10" name="Set value" sid="997539875088155" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
-                                    <param id="1" name="Value">&quot;down&quot;</param>
+                                    <param id="1" name="Value">&quot;DOWN&quot;</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="642809859490351" type="MoveBall">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="106526572812622" type="HistorianAnim">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="177952044633061" type="MoveBall">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="419417247324277">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="345821462138727" type="Historian">
+                                <condition id="0" name="On collision with another object" sid="345821462138727" type="HistorianAnim">
                                     <param id="0" name="Object">TimeMachine</param>
+                                </condition>
+                                <condition id="0" name="Compare value" sid="302063207157201" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;present2&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -483,7 +672,7 @@
                                     <param id="0" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="865210855642612" type="ScientistText">
-                                    <param id="0" name="Text">&quot;Oh, I almost forgot to tell you, please don&apos;t modify the past, we&apos;re not sure of the consequences it can have.&quot;</param>
+                                    <param id="0" name="Text">&quot;We are counting on you. Good luck !&quot;</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="349784078383829" type="System">
                                     <param id="0" name="Seconds">4</param>
@@ -492,14 +681,14 @@
                                 <action behavior="Sine" id="0" name="Set active" sid="203975405202998" type="Moustache">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="420170866242224" type="Historian">
+                                <action id="-10" name="Set value" sid="420170866242224" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Value">&quot;right&quot;</param>
                                 </action>
-                                <action behavior="8Direction" id="5" name="Set acceleration" sid="687368829396211" type="Historian">
+                                <action behavior="8Direction" id="5" name="Set acceleration" sid="687368829396211" type="HistorianAnim">
                                     <param id="0" name="Acceleration">350</param>
                                 </action>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="754699549689902" type="Historian">
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="754699549689902" type="HistorianAnim">
                                     <param id="0" name="Max Speed">99999</param>
                                 </action>
                             </actions>
@@ -511,17 +700,28 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="8Direction" id="5" name="Set acceleration" sid="611155133844075" type="Historian">
-                                            <param id="0" name="Acceleration">Historian.8Direction.Acceleration + 350</param>
+                                        <action behavior="8Direction" disabled="1" id="5" name="Set acceleration" sid="611155133844075" type="HistorianAnim">
+                                            <param id="0" name="Acceleration">HistorianAnim.8Direction.Acceleration + 350</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="923983566367586" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="830508314157780" type="System">
+                                            <param id="0" name="Layout">BattleField_0</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="500086228761128">
+                        <event-block disabled="1" sid="500086228761128">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="177799954162839" type="Historian">
+                                <condition id="0" name="On collision with another object" sid="177799954162839" type="HistorianAnim">
                                     <param id="0" name="Object">Camera</param>
+                                </condition>
+                                <condition id="0" name="Compare value" sid="754429324633034" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;present2&quot;</param>
                                 </condition>
                                 <condition id="-10" name="Compare opacity" sid="574071490921829" type="BlackScreenIsolation">
                                     <param id="0" name="Comparison">0</param>
@@ -532,13 +732,13 @@
                                 <action id="-16" name="Wait" sid="154976934263660" type="System">
                                     <param id="0" name="Seconds">0.03</param>
                                 </action>
-                                <action behavior="8Direction" id="8" name="Set enabled" sid="448595536426678" type="Historian">
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="448595536426678" type="HistorianAnim">
                                     <param id="0" name="State">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="670260907099222" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="359025726688452" type="Historian" />
+                                <action id="-9" name="Destroy" sid="359025726688452" type="HistorianAnim" />
                                 <action id="-9" name="Destroy" sid="235719050404250" type="Camera" />
                                 <action id="-16" name="Wait" sid="333572169140259" type="System">
                                     <param id="0" name="Seconds">0.5</param>
@@ -556,7 +756,7 @@
             <sub-events>
                 <event-block sid="405300165780466">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="183714779520109" type="Historian">
+                        <condition id="0" name="On collision with another object" sid="183714779520109" type="HistorianAnim">
                             <param id="0" name="Object">caveGround</param>
                         </condition>
                     </conditions>
@@ -576,7 +776,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-13" name="Set boolean" sid="398863106773975" type="Historian">
+                                <action id="-13" name="Set boolean" sid="398863106773975" type="HistorianAnim">
                                     <param id="0" name="Instance variable">canMove</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
@@ -591,7 +791,7 @@
                                 <action behavior="Bullet" id="5" name="Set enabled" sid="986350121956273" type="Camera">
                                     <param id="0" name="State">1</param>
                                 </action>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="818057075117453" type="Historian">
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="818057075117453" type="HistorianAnim">
                                     <param id="0" name="Max Speed">300</param>
                                 </action>
                             </actions>
@@ -600,7 +800,7 @@
                 </event-block>
                 <event-block sid="459110085130828">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="458399023620651" type="Historian">
+                        <condition id="1" name="Is overlapping another object" sid="458399023620651" type="HistorianAnim">
                             <param id="0" name="Object">caveGround</param>
                         </condition>
                     </conditions>
@@ -615,15 +815,15 @@
                         <action id="-15" name="Set visible" sid="760847900562959" type="BlackScreenIsolation">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-26" name="Move to layer" sid="538764741489508" type="Historian">
+                        <action id="-26" name="Move to layer" sid="538764741489508" type="HistorianAnim">
                             <param id="0" name="Layer">&quot;Basement&quot;</param>
                         </action>
-                        <action id="-24" name="Move to top" sid="719642268845282" type="Historian" />
+                        <action id="-24" name="Move to top" sid="719642268845282" type="HistorianAnim" />
                     </actions>
                 </event-block>
                 <event-block sid="508619724921067">
                     <conditions>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="429314223592650" type="Historian">
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="429314223592650" type="HistorianAnim">
                             <param id="0" name="Object">caveGround</param>
                         </condition>
                     </conditions>
@@ -638,10 +838,10 @@
                         <action id="-15" name="Set visible" sid="798305149500820" type="BlackScreenIsolation">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-26" name="Move to layer" sid="604666085617556" type="Historian">
+                        <action id="-26" name="Move to layer" sid="604666085617556" type="HistorianAnim">
                             <param id="0" name="Layer">&quot;Street&quot;</param>
                         </action>
-                        <action id="-25" name="Move to bottom" sid="874518301257727" type="Historian" />
+                        <action id="-25" name="Move to bottom" sid="874518301257727" type="HistorianAnim" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -661,7 +861,7 @@
                         <comment>TAG</comment>
                         <event-block sid="835490161926763">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="888310766961341" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="888310766961341" type="HistorianAnim">
                                     <param id="0" name="Object">tag_Zone</param>
                                 </condition>
                             </conditions>
@@ -676,6 +876,7 @@
                                         <condition id="0" name="On key pressed" sid="378508975373255" type="Keyboard">
                                             <param id="0" name="Key">69</param>
                                         </condition>
+                                        <condition id="-9" inverted="1" name="Is visible" sid="132315920411513" type="Tag_fromPast" />
                                     </conditions>
                                     <actions>
                                         <action id="-15" name="Set visible" sid="225069656018232" type="Tag_fromPast">
@@ -687,11 +888,21 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="412406353854069">
+                                    <conditions>
+                                        <condition id="-9" name="Is visible" sid="459857302790748" type="Tag_fromPast" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="677944185499487" type="Tag_text">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="338253407481047">
                             <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="688539924092499" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="688539924092499" type="HistorianAnim">
                                     <param id="0" name="Object">tag_Zone</param>
                                 </condition>
                             </conditions>
@@ -706,7 +917,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="670731225536600" type="TextBackground">
                                     <param id="0" name="Object">tag_Zone</param>
                                 </condition>
-                                <condition id="1" name="Is overlapping another object" sid="891675874677637" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="891675874677637" type="HistorianAnim">
                                     <param id="0" name="Object">tag_Zone</param>
                                 </condition>
                             </conditions>
@@ -721,7 +932,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="765779144090251" type="TextBackground">
                                     <param id="0" name="Object">tag_Zone</param>
                                 </condition>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="105417138134009" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="105417138134009" type="HistorianAnim">
                                     <param id="0" name="Object">tag_Zone</param>
                                 </condition>
                             </conditions>
@@ -734,7 +945,7 @@
                         <comment>Can</comment>
                         <event-block sid="932419578498027">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="138497991813227" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="138497991813227" type="HistorianAnim">
                                     <param id="0" name="Object">Trash_zone</param>
                                 </condition>
                             </conditions>
@@ -749,6 +960,7 @@
                                         <condition id="0" name="On key pressed" sid="944007867030644" type="Keyboard">
                                             <param id="0" name="Key">69</param>
                                         </condition>
+                                        <condition id="-9" name="Is visible" sid="505374764702028" type="trash" />
                                     </conditions>
                                     <actions>
                                         <action id="-15" name="Set visible" sid="340070828677124" type="trash">
@@ -760,11 +972,21 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="343412828114917">
+                                    <conditions>
+                                        <condition id="-9" inverted="1" name="Is visible" sid="778850284364969" type="trash" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="598672720487306" type="Tag_text2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="840167242579669">
                             <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="960235432431304" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="960235432431304" type="HistorianAnim">
                                     <param id="0" name="Object">Trash_zone</param>
                                 </condition>
                             </conditions>
@@ -779,7 +1001,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="660634918634471" type="TextBackground">
                                     <param id="0" name="Object">Trash_zone</param>
                                 </condition>
-                                <condition id="1" name="Is overlapping another object" sid="195705998049488" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="195705998049488" type="HistorianAnim">
                                     <param id="0" name="Object">Trash_zone</param>
                                 </condition>
                             </conditions>
@@ -794,7 +1016,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="237139184395067" type="TextBackground">
                                     <param id="0" name="Object">Trash_zone</param>
                                 </condition>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="835700044024766" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="835700044024766" type="HistorianAnim">
                                     <param id="0" name="Object">Trash_zone</param>
                                 </condition>
                             </conditions>
@@ -807,7 +1029,7 @@
                         <comment>TP</comment>
                         <event-block sid="607309504456992">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="205978114370520" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="205978114370520" type="HistorianAnim">
                                     <param id="0" name="Object">Field_TimeMachine</param>
                                 </condition>
                             </conditions>
@@ -861,7 +1083,7 @@
                         </event-block>
                         <event-block sid="147905072494887">
                             <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="859927882156935" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="859927882156935" type="HistorianAnim">
                                     <param id="0" name="Object">Field_TimeMachine</param>
                                 </condition>
                             </conditions>
@@ -876,7 +1098,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="655947041688543" type="TextBackground">
                                     <param id="0" name="Object">Field_TimeMachine</param>
                                 </condition>
-                                <condition id="1" name="Is overlapping another object" sid="405728263077538" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="405728263077538" type="HistorianAnim">
                                     <param id="0" name="Object">Field_TimeMachine</param>
                                 </condition>
                                 <condition id="-7" name="Compare time" sid="421335153734581" type="System">
@@ -895,7 +1117,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="518828628195701" type="TextBackground">
                                     <param id="0" name="Object">Field_TimeMachine</param>
                                 </condition>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="786897458607729" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="786897458607729" type="HistorianAnim">
                                     <param id="0" name="Object">Field_TimeMachine</param>
                                 </condition>
                             </conditions>
@@ -908,7 +1130,7 @@
                         <comment>NewsPaper</comment>
                         <event-block sid="493461404680153">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="794899823234973" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="794899823234973" type="HistorianAnim">
                                     <param id="0" name="Object">NEWSPAPER</param>
                                 </condition>
                             </conditions>
@@ -973,7 +1195,7 @@
                         </event-block>
                         <event-block sid="913004380229552">
                             <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="996174130149642" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="996174130149642" type="HistorianAnim">
                                     <param id="0" name="Object">NEWSPAPER</param>
                                 </condition>
                             </conditions>
@@ -988,7 +1210,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="824739653228143" type="TextBackground">
                                     <param id="0" name="Object">NEWSPAPER</param>
                                 </condition>
-                                <condition id="1" name="Is overlapping another object" sid="212682579063913" type="Historian">
+                                <condition id="1" name="Is overlapping another object" sid="212682579063913" type="HistorianAnim">
                                     <param id="0" name="Object">NEWSPAPER</param>
                                 </condition>
                             </conditions>
@@ -1003,7 +1225,7 @@
                                 <condition id="1" name="Is overlapping another object" sid="738798259409766" type="TextBackground">
                                     <param id="0" name="Object">NEWSPAPER</param>
                                 </condition>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="931998396012097" type="Historian">
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="931998396012097" type="HistorianAnim">
                                     <param id="0" name="Object">NEWSPAPER</param>
                                 </condition>
                             </conditions>
@@ -1438,7 +1660,7 @@
                         <condition id="0" name="On key pressed" sid="380165102349280" type="Keyboard">
                             <param id="0" name="Key">70</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="416784903672523" type="Historian">
+                        <condition id="1" name="Is overlapping another object" sid="416784903672523" type="HistorianAnim">
                             <param id="0" name="Object">BownlingCave</param>
                         </condition>
                     </conditions>
@@ -1480,7 +1702,7 @@
                         <condition id="0" name="On key pressed" sid="391824487044196" type="Keyboard">
                             <param id="0" name="Key">70</param>
                         </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="381807036583579" type="Historian">
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="381807036583579" type="HistorianAnim">
                             <param id="0" name="Object">BownlingCave</param>
                         </condition>
                     </conditions>
