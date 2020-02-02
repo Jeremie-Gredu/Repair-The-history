@@ -38,7 +38,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Historian/" />
+        <folder expanded="1" path="animation-folder/HistorianAnim/" />
         <folder expanded="1" path="animation-folder/Camera/" />
         <folder expanded="1" path="animation-folder/Wall/" />
         <folder expanded="1" path="animation-folder/Cadave_Bleu/" />
@@ -117,5 +117,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Approuved11/" />
         <folder expanded="1" path="animation-folder/Approuved12/" />
         <folder expanded="1" path="animation-folder/Approuved13/" />
+        <folder expanded="1" path="animation-folder/Trees/" />
+        <folder expanded="1" path="animation-folder/StreetsBase/" />
+        <folder expanded="1" path="animation-folder/Moustache/" />
+        <folder expanded="1" path="animation-folder/Roof/" />
+        <folder expanded="1" path="animation-folder/tag_Zone/" />
+        <folder expanded="1" path="animation-folder/Tag_fromPast/" />
+        <folder expanded="1" path="animation-folder/trash/" />
+        <folder expanded="1" path="animation-folder/Trash_zone/" />
+        <folder expanded="1" path="animation-folder/NEWSPAPER/" />
+        <folder expanded="1" path="animation-folder/BownlingCave/" />
+        <folder expanded="1" path="animation-folder/MoveBall/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/LightSmall/" />
+        <folder expanded="1" path="animation-folder/LightSmall2/" />
     </folders-expanded>
 </c2uistate>

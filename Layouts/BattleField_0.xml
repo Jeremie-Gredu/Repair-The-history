@@ -155,8 +155,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4000</x>
-                        <y>1824</y>
+                        <x>3968</x>
+                        <y>1856</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -8563,10 +8563,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Historian" uid="45">
+                <instance type="HistorianAnim" uid="45">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>DOWN</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -8586,25 +8586,26 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4000</x>
-                        <y>1824</y>
+                        <x>3936</x>
+                        <y>2144</y>
                         <z>0</z>
-                        <width>60</width>
-                        <height>60</height>
+                        <width>56.259593964</width>
+                        <height>112.460823059</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.495850623</hotspotX>
+                        <hotspotY>0.52932018</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Camera" uid="46">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -8630,11 +8631,47 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4000</x>
-                        <y>1824</y>
+                        <x>3936</x>
+                        <y>2144</y>
                         <z>0</z>
                         <width>5</width>
                         <height>5</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MoveBall" uid="534">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>400</max-speed>
+                                <acceleration>9999</acceleration>
+                                <deceleration>9999</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>360 degree (smooth)</set-angle>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3936</x>
+                        <y>2176</y>
+                        <z>0</z>
+                        <width>10</width>
+                        <height>10</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -9980,8 +10017,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4128</x>
-                        <y>1888</y>
+                        <x>4096</x>
+                        <y>1920</y>
                         <z>0</z>
                         <width>192</width>
                         <height>64</height>
@@ -10269,8 +10306,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4128</x>
-                        <y>1888</y>
+                        <x>4096</x>
+                        <y>1920</y>
                         <z>0</z>
                         <width>192</width>
                         <height>64</height>
@@ -10279,6 +10316,1504 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Lights" sid="318195188512543">
+            <initially-visible>1</initially-visible>
+            <background-color>0,0,0</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>0.35</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="LightSmall" uid="559">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3936</x>
+                        <y>2144</y>
+                        <z>0</z>
+                        <width>237.635726929</width>
+                        <height>241.310516357</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538085</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.850000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="560">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1120</x>
+                        <y>1856</y>
+                        <z>0</z>
+                        <width>416</width>
+                        <height>352</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="561">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1472</x>
+                        <y>464.243652344</y>
+                        <z>0</z>
+                        <width>544</width>
+                        <height>480</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="562">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6720</x>
+                        <y>3712</y>
+                        <z>0</z>
+                        <width>608</width>
+                        <height>576</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="563">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>688</x>
+                        <y>2560.649902344</y>
+                        <z>0</z>
+                        <width>576</width>
+                        <height>608</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="564">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>816</x>
+                        <y>3264.162597656</y>
+                        <z>0</z>
+                        <width>736</width>
+                        <height>672</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="565">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6400</x>
+                        <y>2112</y>
+                        <z>0</z>
+                        <width>651.103637695</width>
+                        <height>594.485961914</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="566">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6496</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>651.103637695</width>
+                        <height>594.485961914</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="567">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5290.448242188</x>
+                        <y>191.998779297</y>
+                        <z>0</z>
+                        <width>992</width>
+                        <height>594</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="568">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>0</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4320</x>
+                        <y>608</y>
+                        <z>0</z>
+                        <width>651</width>
+                        <height>832</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="569">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5952</x>
+                        <y>3008</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="570">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5120</x>
+                        <y>3712</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="571">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4928</x>
+                        <y>1888</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="572">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6208</x>
+                        <y>1600</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="573">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3104</x>
+                        <y>2912</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="574">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1824</x>
+                        <y>2976</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="575">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1696</x>
+                        <y>1600</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="576">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>512</x>
+                        <y>1760</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="577">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>992</x>
+                        <y>1280</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="578">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2688</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="579">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2112</x>
+                        <y>1056</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="580">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3392</x>
+                        <y>224</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="581">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4608</x>
+                        <y>3648</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="582">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3392</x>
+                        <y>2304</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="583">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3968</x>
+                        <y>2912</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="584">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3968</x>
+                        <y>1856</y>
+                        <z>0</z>
+                        <width>224</width>
+                        <height>224</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.75</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="585">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>928</x>
+                        <y>832</y>
+                        <z>0</z>
+                        <width>416</width>
+                        <height>288</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="586">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6144</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>224</width>
+                        <height>768</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
+                    </world>
+                </instance>
+                <instance type="LightSmall2" uid="587">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="opa">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Opacity</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>5</period-offset>
+                                <period-offset-random>5</period-offset-random>
+                                <magnitude>15</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="si">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>8</period>
+                                <period-random>1</period-random>
+                                <period-offset>2</period-offset>
+                                <period-offset-random>2</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>1</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5728</x>
+                        <y>768</y>
+                        <z>0</z>
+                        <width>832</width>
+                        <height>416</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502538025</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.349999994</opacity>
                     </world>
                 </instance>
             </instances>
@@ -10313,8 +11848,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4000</x>
-                        <y>1824</y>
+                        <x>3936</x>
+                        <y>2144</y>
                         <z>0</z>
                         <width>1920</width>
                         <height>1080</height>
@@ -10338,8 +11873,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4352</x>
-                        <y>1824</y>
+                        <x>4288</x>
+                        <y>2144</y>
                         <z>0</z>
                         <width>1165.166503906</width>
                         <height>912.374816895</height>
@@ -10363,8 +11898,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3040</x>
-                        <y>1824</y>
+                        <x>2976</x>
+                        <y>2144</y>
                         <z>0</z>
                         <width>1165.166503906</width>
                         <height>912.374816895</height>
@@ -10388,8 +11923,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3104</x>
-                        <y>1568</y>
+                        <x>3040</x>
+                        <y>1888</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
@@ -10413,8 +11948,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3328</x>
-                        <y>1568</y>
+                        <x>3264</x>
+                        <y>1888</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
@@ -10438,8 +11973,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3328</x>
-                        <y>1920</y>
+                        <x>3264</x>
+                        <y>2240</y>
                         <z>0</z>
                         <width>192</width>
                         <height>288</height>
@@ -10463,8 +11998,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3104</x>
-                        <y>1920</y>
+                        <x>3040</x>
+                        <y>2240</y>
                         <z>0</z>
                         <width>192</width>
                         <height>288</height>
@@ -10488,8 +12023,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3840</x>
-                        <y>1568</y>
+                        <x>3776</x>
+                        <y>1888</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -10513,8 +12048,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4416</x>
-                        <y>1856</y>
+                        <x>4352</x>
+                        <y>2176</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
@@ -10538,8 +12073,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4672</x>
-                        <y>1856</y>
+                        <x>4608</x>
+                        <y>2176</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
@@ -10563,8 +12098,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4416</x>
-                        <y>1440</y>
+                        <x>4352</x>
+                        <y>1760</y>
                         <z>0</z>
                         <width>192</width>
                         <height>352</height>
@@ -10588,8 +12123,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4672</x>
-                        <y>1440</y>
+                        <x>4608</x>
+                        <y>1760</y>
                         <z>0</z>
                         <width>192</width>
                         <height>352</height>
@@ -10613,8 +12148,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4096</x>
-                        <y>1568</y>
+                        <x>4032</x>
+                        <y>1888</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -10638,8 +12173,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3840</x>
-                        <y>1792</y>
+                        <x>3776</x>
+                        <y>2112</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -10663,8 +12198,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4096</x>
-                        <y>1792</y>
+                        <x>4032</x>
+                        <y>2112</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -10688,8 +12223,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3840</x>
-                        <y>2016</y>
+                        <x>3776</x>
+                        <y>2336</y>
                         <z>0</z>
                         <width>448</width>
                         <height>192</height>
@@ -10713,8 +12248,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3168</x>
-                        <y>1408</y>
+                        <x>3104</x>
+                        <y>1728</y>
                         <z>0</z>
                         <width>288</width>
                         <height>128</height>
@@ -10738,8 +12273,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3872</x>
-                        <y>1440</y>
+                        <x>3808</x>
+                        <y>1760</y>
                         <z>0</z>
                         <width>384</width>
                         <height>64</height>
@@ -10768,8 +12303,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3104</x>
-                        <y>1568</y>
+                        <x>3040</x>
+                        <y>1888</y>
                         <z>0</z>
                         <width>192</width>
                         <height>288</height>
@@ -10798,8 +12333,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3104</x>
-                        <y>1920</y>
+                        <x>3040</x>
+                        <y>2240</y>
                         <z>0</z>
                         <width>192</width>
                         <height>256</height>
@@ -10828,8 +12363,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3328</x>
-                        <y>1568</y>
+                        <x>3264</x>
+                        <y>1888</y>
                         <z>0</z>
                         <width>192</width>
                         <height>288</height>
@@ -10858,8 +12393,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3328</x>
-                        <y>1920</y>
+                        <x>3264</x>
+                        <y>2240</y>
                         <z>0</z>
                         <width>192</width>
                         <height>256</height>
@@ -10888,8 +12423,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4512</x>
-                        <y>2016</y>
+                        <x>4448</x>
+                        <y>2336</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
@@ -10918,8 +12453,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4064</x>
-                        <y>2112</y>
+                        <x>4000</x>
+                        <y>2432</y>
                         <z>0</z>
                         <width>448</width>
                         <height>192</height>
@@ -10948,8 +12483,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4768</x>
-                        <y>2016</y>
+                        <x>4704</x>
+                        <y>2336</y>
                         <z>0</z>
                         <width>192</width>
                         <height>320</height>
@@ -10978,8 +12513,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4512</x>
-                        <y>1616</y>
+                        <x>4448</x>
+                        <y>1920</y>
                         <z>0</z>
                         <width>192</width>
                         <height>352</height>
@@ -11008,8 +12543,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4192</x>
-                        <y>1664</y>
+                        <x>4128</x>
+                        <y>1984</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -11038,8 +12573,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4768</x>
-                        <y>1618</y>
+                        <x>4704</x>
+                        <y>1920</y>
                         <z>0</z>
                         <width>192</width>
                         <height>352</height>
@@ -11068,8 +12603,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3936</x>
-                        <y>1888</y>
+                        <x>3872</x>
+                        <y>2208</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -11098,8 +12633,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3936</x>
-                        <y>1664</y>
+                        <x>3872</x>
+                        <y>1984</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -11128,8 +12663,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4203</x>
-                        <y>1881</y>
+                        <x>4128</x>
+                        <y>2208</y>
                         <z>0</z>
                         <width>192</width>
                         <height>192</height>
@@ -11158,8 +12693,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3168</x>
-                        <y>1408</y>
+                        <x>3104</x>
+                        <y>1728</y>
                         <z>0</z>
                         <width>288</width>
                         <height>128</height>
@@ -11188,8 +12723,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3872</x>
-                        <y>1440</y>
+                        <x>3808</x>
+                        <y>1760</y>
                         <z>0</z>
                         <width>384</width>
                         <height>64</height>
@@ -11225,8 +12760,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5056</x>
-                        <y>1376</y>
+                        <x>4992</x>
+                        <y>1696</y>
                         <z>0</z>
                         <width>150</width>
                         <height>150</height>
@@ -11250,8 +12785,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3506.6875</x>
-                        <y>1876.307250977</y>
+                        <x>3450</x>
+                        <y>2201</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11275,8 +12810,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3281.961914063</x>
-                        <y>1875.188720703</y>
+                        <x>3225.655517578</x>
+                        <y>2201.012939453</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11300,8 +12835,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3287.343261719</x>
-                        <y>2195.914306641</y>
+                        <x>3226</x>
+                        <y>2521</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11325,8 +12860,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3504.244873047</x>
-                        <y>2198.221435547</y>
+                        <x>3449</x>
+                        <y>2521</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11350,8 +12885,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4018.783691406</x>
-                        <y>1747.511962891</y>
+                        <x>3961</x>
+                        <y>2073</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11375,8 +12910,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4274.89453125</x>
-                        <y>1749.816162109</y>
+                        <x>4217</x>
+                        <y>2073</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11400,8 +12935,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4018.004150391</x>
-                        <y>1972.864135742</y>
+                        <x>3961</x>
+                        <y>2297</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11425,8 +12960,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4279.519042969</x>
-                        <y>1973.634765625</y>
+                        <x>4217</x>
+                        <y>2298</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11450,8 +12985,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4277.209960938</x>
-                        <y>2198.224365234</y>
+                        <x>4217</x>
+                        <y>2521</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11475,8 +13010,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4600.242675781</x>
-                        <y>2167.458496094</y>
+                        <x>4537</x>
+                        <y>2489</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11500,8 +13035,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4855</x>
-                        <y>2167</y>
+                        <x>4793</x>
+                        <y>2489</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11525,8 +13060,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4853</x>
-                        <y>1783</y>
+                        <x>4793</x>
+                        <y>2105</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>
@@ -11550,8 +13085,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4601.020996094</x>
-                        <y>1782.119628906</y>
+                        <x>4537</x>
+                        <y>2105</y>
                         <z>0</z>
                         <width>15</width>
                         <height>15</height>

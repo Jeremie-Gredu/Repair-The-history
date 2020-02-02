@@ -5,9 +5,108 @@
     <events>
         <event-group description="" sid="572909696118663" title="Mouvement + Book">
             <sub-events>
+                <event-group description="" sid="976191888435336" title="Anims">
+                    <sub-events>
+                        <event-block sid="351836996405041">
+                            <conditions>
+                                <condition id="-13" name="Is between angles" sid="607792127125460" type="MoveBall">
+                                    <param id="0" name="First angle">-45</param>
+                                    <param id="1" name="Second angle">45</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="115633479857407" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;RIGHT&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="587844630127138">
+                            <conditions>
+                                <condition id="-13" name="Is between angles" sid="765787197913777" type="MoveBall">
+                                    <param id="0" name="First angle">45</param>
+                                    <param id="1" name="Second angle">135</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="153248705084407" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;DOWN&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="855363750057626">
+                            <conditions>
+                                <condition id="-13" name="Is between angles" sid="362882481087454" type="MoveBall">
+                                    <param id="0" name="First angle">135</param>
+                                    <param id="1" name="Second angle">225</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="220890385385905" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;LEFT&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="845747374795718">
+                            <conditions>
+                                <condition id="-13" name="Is between angles" sid="649776574683921" type="MoveBall">
+                                    <param id="0" name="First angle">225</param>
+                                    <param id="1" name="Second angle">315</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="864601163234953" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;UP&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="248689676871552">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" name="Is moving" sid="305436493604683" type="HistorianAnim" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="865151772641041" type="HistorianAnim">
+                                    <param id="0" name="Animation">HistorianAnim.DirectionScript</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="834677072279527">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" name="Is moving" sid="412059537611271" type="HistorianAnim" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="310722492790130" type="HistorianAnim">
+                                    <param id="0" name="Speed">15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="683998104154958">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="301786519903957" type="HistorianAnim" />
+                                <condition id="9" name="Is overlapping at offset" sid="728854496168859" type="HistorianAnim">
+                                    <param id="0" name="Object">CtrlStop</param>
+                                    <param id="1" name="Offset X">-10</param>
+                                    <param id="2" name="Offset Y">-10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="514106031275313" type="HistorianAnim">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="766046919531694" type="HistorianAnim">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="959224688590451">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="986988662177690" type="Historian">
+                        <condition id="-8" name="Is boolean instance variable set" sid="986988662177690" type="HistorianAnim">
                             <param id="0" name="Instance variable">canMove</param>
                         </condition>
                     </conditions>
@@ -20,7 +119,14 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="154815240320756" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="154815240320756" type="HistorianAnim">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="954600786240073" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;UP&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="125610027489390" type="MoveBall">
                                     <param id="0" name="Control">2</param>
                                 </action>
                             </actions>
@@ -32,7 +138,14 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="891999111455304" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="891999111455304" type="HistorianAnim">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="969214304576363" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;LEFT&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="992145549225034" type="MoveBall">
                                     <param id="0" name="Control">0</param>
                                 </action>
                             </actions>
@@ -44,7 +157,14 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="646582998012138" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="646582998012138" type="HistorianAnim">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="962382527097886" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;RIGHT&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="542641035201216" type="MoveBall">
                                     <param id="0" name="Control">1</param>
                                 </action>
                             </actions>
@@ -56,7 +176,14 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="172311652398361" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="172311652398361" type="HistorianAnim">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="426751765487102" type="HistorianAnim">
+                                    <param id="0" name="Instance variable">DirectionScript</param>
+                                    <param id="1" name="Value">&quot;DOWN&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="254757425914666" type="MoveBall">
                                     <param id="0" name="Control">3</param>
                                 </action>
                             </actions>
@@ -65,7 +192,7 @@
                 </event-block>
                 <event-block sid="208268705235830">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="385669629466926" type="Historian">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="385669629466926" type="HistorianAnim">
                             <param id="0" name="Instance variable">canMove</param>
                         </condition>
                     </conditions>
@@ -73,76 +200,95 @@
                     <sub-events>
                         <event-block sid="887423057261267">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="463847619797745" type="Historian">
+                                <condition id="-7" name="Compare instance variable" sid="463847619797745" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;up&quot;</param>
+                                    <param id="2" name="Value">&quot;UP&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="771168849047265" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="771168849047265" type="HistorianAnim">
                                     <param id="0" name="Control">2</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="803074144818260" type="MoveBall">
+                                    <param id="0" name="Angle">270</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="117281066474609">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="414555511209906" type="Historian">
+                                <condition id="-7" name="Compare instance variable" sid="414555511209906" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;left&quot;</param>
+                                    <param id="2" name="Value">&quot;LEFT&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="400052482808197" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="400052482808197" type="HistorianAnim">
                                     <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="708767042315350" type="MoveBall">
+                                    <param id="0" name="Angle">180</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="975102771410358">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="944251770465583" type="Historian">
+                                <condition id="-7" name="Compare instance variable" sid="944251770465583" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;right&quot;</param>
+                                    <param id="2" name="Value">&quot;RIGHT&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="899716851110037" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="899716851110037" type="HistorianAnim">
                                     <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="897306230728487" type="MoveBall">
+                                    <param id="0" name="Angle">0</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="955707496507440">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="134805492416211" type="Historian">
+                                <condition id="-7" name="Compare instance variable" sid="134805492416211" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;down&quot;</param>
+                                    <param id="2" name="Value">&quot;DOWN&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="891571443264244" type="Historian">
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="891571443264244" type="HistorianAnim">
                                     <param id="0" name="Control">3</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="120900612679399" type="MoveBall">
+                                    <param id="0" name="Angle">90</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="109493582688867">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="747984710629560" type="Historian">
+                                <condition id="-7" name="Compare instance variable" sid="747984710629560" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;stop&quot;</param>
+                                    <param id="2" name="Value">&quot;STOP&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="956334346180420" type="HistorianAnim">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="969570946592051" type="MoveBall">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
                 <comment>book</comment>
                 <event-block sid="921255600996028">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="279469338715980" type="Historian">
+                        <condition id="-8" name="Is boolean instance variable set" sid="279469338715980" type="HistorianAnim">
                             <param id="0" name="Instance variable">canMove</param>
                         </condition>
                     </conditions>
@@ -158,11 +304,11 @@
                                 <action id="-16" name="Wait" sid="494168497635211" type="System">
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="236056690614540" type="Historian">
+                                <action id="-13" name="Set boolean" sid="236056690614540" type="HistorianAnim">
                                     <param id="0" name="Instance variable">canMove</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="287575101707749" type="Historian">
+                                <action id="-10" name="Set value" sid="287575101707749" type="HistorianAnim">
                                     <param id="0" name="Instance variable">DirectionScript</param>
                                     <param id="1" name="Value">&quot;stop&quot;</param>
                                 </action>
@@ -170,13 +316,25 @@
                                     <param id="0" name="Layer">&quot;Book&quot;</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
+                                <action disabled="1" id="-3" name="Set position" sid="308421033191079" type="markSign">
+                                    <param id="0" name="X">-100</param>
+                                    <param id="1" name="Y">-100</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="838846943157084" type="System">
+                                    <param id="0" name="Object">MoveBall</param>
+                                    <param id="1" name="Time scale">0</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="440203630603850" type="System">
+                                    <param id="0" name="Object">HistorianAnim</param>
+                                    <param id="1" name="Time scale">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="681392220257307">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="108406274764086" type="Historian">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="108406274764086" type="HistorianAnim">
                             <param id="0" name="Instance variable">canMove</param>
                         </condition>
                         <condition id="-9" name="Layer is visible" sid="321136624031509" type="System">
@@ -199,9 +357,17 @@
                                     <param id="0" name="Layer">&quot;Book&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="786410086219093" type="Historian">
+                                <action id="-13" name="Set boolean" sid="786410086219093" type="HistorianAnim">
                                     <param id="0" name="Instance variable">canMove</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="240622698366573" type="System">
+                                    <param id="0" name="Object">MoveBall</param>
+                                    <param id="1" name="Time scale">1</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="155673186683724" type="System">
+                                    <param id="0" name="Object">HistorianAnim</param>
+                                    <param id="1" name="Time scale">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -217,7 +383,7 @@
                     </conditions>
                     <actions>
                         <action behavior="Pin" id="0" name="Pin to object" sid="658814393051378" type="Camera">
-                            <param id="0" name="Pin to">Historian</param>
+                            <param id="0" name="Pin to">HistorianAnim</param>
                             <param id="1" name="Mode">1</param>
                         </action>
                         <action id="10" name="Request fullscreen" sid="569536693854124" type="Browser">
@@ -232,7 +398,7 @@
                             <param id="1" name="Visibility">0</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="553360717716984" type="BlackBackGound">
-                            <param id="0" name="Pin to">Historian</param>
+                            <param id="0" name="Pin to">HistorianAnim</param>
                             <param id="1" name="Mode">1</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="778030117561098" type="Book">
@@ -242,6 +408,18 @@
                         <action behavior="Pin" id="0" name="Pin to object" sid="780002366141177" type="BookTextBackGound">
                             <param id="0" name="Pin to">Book</param>
                             <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="501173387769696" type="MoveBall">
+                            <param id="0" name="Pin to">HistorianAnim</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" disabled="1" id="0" name="Pin to object" sid="705797235702750" type="MoveBall">
+                            <param id="0" name="Pin to">MoveBall</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="988524846794463" type="LightSmall">
+                            <param id="0" name="Pin to">HistorianAnim</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -254,16 +432,16 @@
                         <comment>//// X ////</comment>
                         <event-block sid="434963793798283">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="557151418727250" type="Historian">
+                                <condition id="-1" name="Compare X" sid="557151418727250" type="Camera">
                                     <param id="0" name="Comparison">3</param>
                                     <param id="1" name="X co-ordinate">960</param>
                                 </condition>
                                 <condition id="-1" name="Every tick" sid="624725462533071" type="System" />
-                                <condition id="-2" name="Compare Y" sid="137629568400854" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="137629568400854" type="Camera">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="Y co-ordinate">540</param>
                                 </condition>
-                                <condition id="-2" name="Compare Y" sid="547023952133999" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="547023952133999" type="Camera">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="Y co-ordinate">3460</param>
                                 </condition>
@@ -271,13 +449,13 @@
                             <actions>
                                 <action behavior="Pin" id="1" name="Unpin" sid="549021300227567" type="BlackBackGound" />
                                 <action id="-2" name="Set Y" sid="547537124568789" type="BlackBackGound">
-                                    <param id="0" name="Y">Historian.Y</param>
+                                    <param id="0" name="Y">Camera.Y</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="909162870187629">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="784002385290569" type="Historian">
+                                <condition id="-1" name="Compare X" sid="784002385290569" type="Camera">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="X co-ordinate">960</param>
                                 </condition>
@@ -285,23 +463,23 @@
                             </conditions>
                             <actions>
                                 <action behavior="Pin" id="0" name="Pin to object" sid="790012750727124" type="BlackBackGound">
-                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="0" name="Pin to">Camera</param>
                                     <param id="1" name="Mode">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="625502592322237">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="523383870168447" type="Historian">
+                                <condition id="-1" name="Compare X" sid="523383870168447" type="Camera">
                                     <param id="0" name="Comparison">5</param>
                                     <param id="1" name="X co-ordinate">6040</param>
                                 </condition>
                                 <condition id="-1" name="Every tick" sid="792603354956462" type="System" />
-                                <condition id="-2" name="Compare Y" sid="639249816241222" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="639249816241222" type="Camera">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="Y co-ordinate">540</param>
                                 </condition>
-                                <condition id="-2" name="Compare Y" sid="759857819115134" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="759857819115134" type="Camera">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="Y co-ordinate">3460</param>
                                 </condition>
@@ -309,13 +487,13 @@
                             <actions>
                                 <action behavior="Pin" id="1" name="Unpin" sid="156832459983138" type="BlackBackGound" />
                                 <action id="-2" name="Set Y" sid="643627952563342" type="BlackBackGound">
-                                    <param id="0" name="Y">Historian.Y</param>
+                                    <param id="0" name="Y">Camera.Y</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="434962467717464">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="936057611937408" type="Historian">
+                                <condition id="-1" name="Compare X" sid="936057611937408" type="Camera">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="X co-ordinate">6040</param>
                                 </condition>
@@ -323,7 +501,7 @@
                             </conditions>
                             <actions>
                                 <action behavior="Pin" id="0" name="Pin to object" sid="779567566159597" type="BlackBackGound">
-                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="0" name="Pin to">Camera</param>
                                     <param id="1" name="Mode">1</param>
                                 </action>
                             </actions>
@@ -331,16 +509,16 @@
                         <comment>//// Y ////</comment>
                         <event-block sid="113324093013768">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="721218783249675" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="721218783249675" type="Camera">
                                     <param id="0" name="Comparison">3</param>
                                     <param id="1" name="Y co-ordinate">540</param>
                                 </condition>
                                 <condition id="-1" name="Every tick" sid="690730762678415" type="System" />
-                                <condition id="-1" name="Compare X" sid="526931917074937" type="Historian">
+                                <condition id="-1" name="Compare X" sid="526931917074937" type="Camera">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="X co-ordinate">960</param>
                                 </condition>
-                                <condition id="-1" name="Compare X" sid="226178718090317" type="Historian">
+                                <condition id="-1" name="Compare X" sid="226178718090317" type="Camera">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="X co-ordinate">6040</param>
                                 </condition>
@@ -348,13 +526,13 @@
                             <actions>
                                 <action behavior="Pin" id="1" name="Unpin" sid="349773862950202" type="BlackBackGound" />
                                 <action id="-1" name="Set X" sid="888890645744094" type="BlackBackGound">
-                                    <param id="0" name="X">Historian.X</param>
+                                    <param id="0" name="X">Camera.X</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="712899763456916">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="736214733807101" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="736214733807101" type="Camera">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="Y co-ordinate">540</param>
                                 </condition>
@@ -362,23 +540,23 @@
                             </conditions>
                             <actions>
                                 <action behavior="Pin" id="0" name="Pin to object" sid="957227350039862" type="BlackBackGound">
-                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="0" name="Pin to">Camera</param>
                                     <param id="1" name="Mode">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="500833472023941">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="954420726276455" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="954420726276455" type="Camera">
                                     <param id="0" name="Comparison">5</param>
                                     <param id="1" name="Y co-ordinate">3460</param>
                                 </condition>
                                 <condition id="-1" name="Every tick" sid="799864962606463" type="System" />
-                                <condition id="-1" name="Compare X" sid="996989343885342" type="Historian">
+                                <condition id="-1" name="Compare X" sid="996989343885342" type="Camera">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="X co-ordinate">960</param>
                                 </condition>
-                                <condition id="-1" name="Compare X" sid="895645647825709" type="Historian">
+                                <condition id="-1" name="Compare X" sid="895645647825709" type="Camera">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="X co-ordinate">6040</param>
                                 </condition>
@@ -386,13 +564,13 @@
                             <actions>
                                 <action behavior="Pin" id="1" name="Unpin" sid="212735966063789" type="BlackBackGound" />
                                 <action id="-1" name="Set X" sid="767732173380814" type="BlackBackGound">
-                                    <param id="0" name="X">Historian.X</param>
+                                    <param id="0" name="X">Camera.X</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="371621693265011">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="930231854871642" type="Historian">
+                                <condition id="-2" name="Compare Y" sid="930231854871642" type="Camera">
                                     <param id="0" name="Comparison">2</param>
                                     <param id="1" name="Y co-ordinate">3460</param>
                                 </condition>
@@ -400,7 +578,7 @@
                             </conditions>
                             <actions>
                                 <action behavior="Pin" id="0" name="Pin to object" sid="348574067111544" type="BlackBackGound">
-                                    <param id="0" name="Pin to">Historian</param>
+                                    <param id="0" name="Pin to">Camera</param>
                                     <param id="1" name="Mode">1</param>
                                 </action>
                             </actions>
@@ -421,45 +599,78 @@
                 </event-block>
                 <event-block sid="642966981082143">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="208517928986767" type="Historian">
+                        <condition id="0" name="On collision with another object" sid="208517928986767" type="HistorianAnim">
                             <param id="0" name="Object">CtrlLeft</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="807471718421261" type="System">
-                            <param id="0" name="First value">Historian.8Direction.Acceleration</param>
+                            <param id="0" name="First value">HistorianAnim.8Direction.Acceleration</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">9999</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="309658142053727" type="Historian">
+                        <action id="-10" name="Set value" sid="309658142053727" type="HistorianAnim">
                             <param id="0" name="Instance variable">DirectionScript</param>
-                            <param id="1" name="Value">&quot;left&quot;</param>
+                            <param id="1" name="Value">&quot;LEFT&quot;</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="130446099341702" type="MoveBall">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="553772965319947">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="313272345395805" type="HistorianAnim">
+                            <param id="0" name="Object">CtrlLeft</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="298983183736617" type="System">
+                            <param id="0" name="First value">HistorianAnim.8Direction.Acceleration</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">9999</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="942814710875090" type="HistorianAnim">
+                            <param id="0" name="Instance variable">DirectionScript</param>
+                            <param id="1" name="Value">&quot;LEFT&quot;</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="963108186957941" type="MoveBall">
+                            <param id="0" name="Angle">180</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="102971736373870">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="212914105693915" type="Historian">
+                        <condition id="0" name="On collision with another object" sid="212914105693915" type="HistorianAnim">
                             <param id="0" name="Object">CtrlUp</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="686693374358486" type="Historian">
+                        <action id="-10" name="Set value" sid="686693374358486" type="HistorianAnim">
                             <param id="0" name="Instance variable">DirectionScript</param>
-                            <param id="1" name="Value">&quot;up&quot;</param>
+                            <param id="1" name="Value">&quot;UP&quot;</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="319402727548355" type="MoveBall">
+                            <param id="0" name="Angle">270</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="479341569202991">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="906563477892703" type="Historian">
+                        <condition id="0" name="On collision with another object" sid="906563477892703" type="HistorianAnim">
                             <param id="0" name="Object">CtrlStop</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="780474509480396" type="Historian">
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="443285589161462" type="MoveBall">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="821411239757437" type="HistorianAnim">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="546849825238413" type="HistorianAnim">
                             <param id="0" name="Instance variable">DirectionScript</param>
-                            <param id="1" name="Value">&quot;stop&quot;</param>
+                            <param id="1" name="Value">&quot;NONE&quot;</param>
                         </action>
                     </actions>
                 </event-block>
