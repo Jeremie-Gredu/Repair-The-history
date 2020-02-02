@@ -1092,10 +1092,6 @@
                         <condition id="1" name="Is overlapping another object" sid="531364899260050" type="HistorianAnim">
                             <param id="0" name="Object">Field_TimeMachine</param>
                         </condition>
-                        <condition id="-7" name="Compare time" sid="162685042789771" type="System">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Time (seconds)">5</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="-15" name="Set visible" sid="701670047826155" type="TP_txt">
@@ -1161,6 +1157,12 @@
                         <action id="0" name="Add key" sid="507412928080204" type="SmalEvents">
                             <param id="0" name="Key">&quot;Evironement_1&quot;</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="552934958818781" type="Audio">
+                            <param id="0" name="Audio file">lvl1- soundtrack</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -2664,10 +2666,6 @@
                         <condition id="1" name="Is overlapping another object" sid="240559077559301" type="HistorianAnim">
                             <param id="0" name="Object">Field_TimeMachine</param>
                         </condition>
-                        <condition id="-7" name="Compare time" sid="414503574454810" type="System">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Time (seconds)">5</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="1" name="Set key" sid="334484247353788" type="SmalEvents">
@@ -2874,8 +2872,37 @@
                         <event-block sid="674260566044896">
                             <conditions />
                             <actions>
-                                <action id="0" name="Set text" sid="608127646059705" type="TP_txt">
-                                    <param id="0" name="Text">SmalEvents.Get(&quot;Evironement_1&quot;)</param>
+                                <action id="0" name="Play" sid="676988184765258" type="Audio">
+                                    <param id="0" name="Audio file">time machine launch</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;zizi&quot;</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="903419780627024" type="System">
+                                    <param id="0" name="Layer">&quot;Lights&quot;</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="877347097871997" type="System">
+                                    <param id="0" name="Seconds">7.1</param>
+                                </action>
+                                <action id="0" name="Add key" sid="586553608689529" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Value">&quot;present3&quot;</param>
+                                </action>
+                                <action id="1" name="Set key" sid="429755008893423" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Value">&quot;present3&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="470966558562762" type="System">
+                                    <param id="0" name="Layout">Present_0</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="129914307012050" type="System">
+                                    <param id="0" name="Object">MoveBall</param>
+                                    <param id="1" name="Time scale">0</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="937597121460095" type="System">
+                                    <param id="0" name="Object">HistorianAnim</param>
+                                    <param id="1" name="Time scale">0</param>
                                 </action>
                             </actions>
                         </event-block>
