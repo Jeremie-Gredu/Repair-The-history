@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>End_EV</name>
+    <events>
+        <event-block sid="466456256960994">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="858283924422878" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="970297868264636">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="833051789733989" type="SmalEvents">
+                            <param id="0" name="Key">&quot;Choice&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="843827112521522">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="840452500517795" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="634402986136273" type="EndText">
+                                    <param id="0" name="Text">&quot;Choose Yellow There are happy&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="324078187732542">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="901436568281938" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="859039433241512" type="EndText">
+                                    <param id="0" name="Text">&quot;Choose Yellow There are angry&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="771855284553939">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="906302161686867" type="SmalEvents">
+                            <param id="0" name="Key">&quot;Choice&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="514471699793583">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="210244056901208" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="881052189881671" type="EndText">
+                                    <param id="0" name="Text">&quot;Choose Blue There are angry&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="139637846074134">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="255352546173353" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Evironement_1&quot;</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="408116773277496" type="EndText">
+                                    <param id="0" name="Text">&quot;Choose Blue There are happy&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

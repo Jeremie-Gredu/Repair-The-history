@@ -84,9 +84,6 @@
                                 <action id="-16" name="Wait" sid="119166206233682" type="System">
                                     <param id="0" name="Seconds">0.3</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="256089450741428" type="TextBackground">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="0" name="Set text" sid="273830072936117" type="ScientistText">
                                     <param id="0" name="Text">&quot;Hi, thanks for coming. Today is the big day, we finally test the time machine! I&apos;m so excited. [E]&quot;</param>
                                 </action>
@@ -94,6 +91,20 @@
                                     <param id="0" name="State">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="726913004968742">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="643006969189876" type="TextBackground">
+                                            <param id="0" name="Object">OpendNoteBook</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="497582348602524" type="TextBackground">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="327005165960221">
                             <conditions>
@@ -242,57 +253,78 @@
                                     <param id="2" name="Value">&quot;present1&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="274217046238257" type="System">
-                                    <param id="0" name="Seconds">0.4</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="128863080380998" type="TextBackground">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="315467443210042" type="Moustache">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="655152763738814" type="ScientistText">
-                                    <param id="0" name="Text">&quot;Oh, I almost forgot to tell you, please don&apos;t modify the past, we&apos;re not sure of the consequences it can have.&quot;</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="478459854835362" type="System">
-                                    <param id="0" name="Seconds">4</param>
-                                </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="222450459227453" type="BlackScreenIsolation" />
-                                <action behavior="Sine" id="0" name="Set active" sid="875996352341972" type="Moustache">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="441038782437093" type="HistorianAnim">
-                                    <param id="0" name="Instance variable">DirectionScript</param>
-                                    <param id="1" name="Value">&quot;right&quot;</param>
-                                </action>
-                                <action behavior="8Direction" id="5" name="Set acceleration" sid="341863313993489" type="HistorianAnim">
-                                    <param id="0" name="Acceleration">350</param>
-                                </action>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="757420221321319" type="HistorianAnim">
-                                    <param id="0" name="Max Speed">99999</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="781582735129042">
+                                <event-block sid="165447927503762">
                                     <conditions>
-                                        <condition id="-6" name="Every X seconds" sid="956576185984102" type="System">
-                                            <param id="0" name="Interval (seconds)">0.05</param>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="323236158196809" type="TextBackground">
+                                            <param id="0" name="Object">OpendNoteBook</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="8Direction" disabled="1" id="5" name="Set acceleration" sid="228282372402232" type="HistorianAnim">
-                                            <param id="0" name="Acceleration">HistorianAnim.8Direction.Acceleration + 350</param>
+                                        <action id="-15" name="Set visible" sid="999158787396377" type="TextBackground">
+                                            <param id="0" name="Visibility">1</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="266548736219090" type="System">
-                                            <param id="0" name="Seconds">0.5</param>
-                                        </action>
-                                        <action id="1" name="Set key" sid="602553654844854" type="SmalEvents">
-                                            <param id="0" name="Key">&quot;Present_1&quot;</param>
-                                            <param id="1" name="Value">&quot;past1&quot;</param>
-                                        </action>
-                                        <action id="-26" name="Restart layout" sid="862066622224175" type="System" />
                                     </actions>
+                                </event-block>
+                                <event-block sid="120127621926005">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="558235884239534" type="System">
+                                            <param id="0" name="Seconds">0.4</param>
+                                        </action>
+                                        <action behavior="Sine" id="0" name="Set active" sid="541575670808648" type="Moustache">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="913954265753493" type="ScientistText">
+                                            <param id="0" name="Text">&quot;Oh, I almost forgot to tell you, please don&apos;t modify the past, we&apos;re not sure of the consequences it can have.&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="481723195204278" type="System">
+                                            <param id="0" name="Seconds">4</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="135100893309080" type="Audio">
+                                            <param id="0" name="Audio file">time machine launch</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;zizi&quot;</param>
+                                        </action>
+                                        <action behavior="Fade" id="1" name="Start fade" sid="463725332329703" type="BlackScreenIsolation" />
+                                        <action behavior="Sine" id="0" name="Set active" sid="803833635636217" type="Moustache">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="479508178040509" type="HistorianAnim">
+                                            <param id="0" name="Instance variable">DirectionScript</param>
+                                            <param id="1" name="Value">&quot;right&quot;</param>
+                                        </action>
+                                        <action behavior="8Direction" id="5" name="Set acceleration" sid="622789165968255" type="HistorianAnim">
+                                            <param id="0" name="Acceleration">350</param>
+                                        </action>
+                                        <action behavior="8Direction" id="4" name="Set max speed" sid="117831595967493" type="HistorianAnim">
+                                            <param id="0" name="Max Speed">99999</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="781582735129042">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="956576185984102" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" disabled="1" id="5" name="Set acceleration" sid="228282372402232" type="HistorianAnim">
+                                                    <param id="0" name="Acceleration">HistorianAnim.8Direction.Acceleration + 350</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="266548736219090" type="System">
+                                                    <param id="0" name="Seconds">0.5</param>
+                                                </action>
+                                                <action id="1" name="Set key" sid="602553654844854" type="SmalEvents">
+                                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                                    <param id="1" name="Value">&quot;past1&quot;</param>
+                                                </action>
+                                                <action id="-26" name="Restart layout" sid="862066622224175" type="System" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -355,9 +387,6 @@
                                 <action id="-16" name="Wait" sid="567621492612308" type="System">
                                     <param id="0" name="Seconds">0.3</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="821397422807831" type="TextBackground">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="0" name="Set text" sid="195392258663756" type="ScientistText">
                                     <param id="0" name="Text">&quot;oh, you&apos;re still..... alive? [E...]&quot;</param>
                                 </action>
@@ -365,6 +394,20 @@
                                     <param id="0" name="State">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="816496831494642">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="760190391623027" type="TextBackground">
+                                            <param id="0" name="Object">OpendNoteBook</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="445058285831298" type="TextBackground">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="963696581173044">
                             <conditions>
@@ -661,55 +704,81 @@
                                     <param id="2" name="Value">&quot;present2&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="965061085144760" type="System">
-                                    <param id="0" name="Seconds">0.4</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="200165872713032" type="TextBackground">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="920283289548742" type="Moustache">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="865210855642612" type="ScientistText">
-                                    <param id="0" name="Text">&quot;We are counting on you. Good luck !&quot;</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="349784078383829" type="System">
-                                    <param id="0" name="Seconds">4</param>
-                                </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="102161349799755" type="BlackScreenIsolation" />
-                                <action behavior="Sine" id="0" name="Set active" sid="203975405202998" type="Moustache">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="420170866242224" type="HistorianAnim">
-                                    <param id="0" name="Instance variable">DirectionScript</param>
-                                    <param id="1" name="Value">&quot;right&quot;</param>
-                                </action>
-                                <action behavior="8Direction" id="5" name="Set acceleration" sid="687368829396211" type="HistorianAnim">
-                                    <param id="0" name="Acceleration">350</param>
-                                </action>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="754699549689902" type="HistorianAnim">
-                                    <param id="0" name="Max Speed">99999</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="309808697283366">
+                                <event-block sid="930166263055926">
                                     <conditions>
-                                        <condition id="-6" name="Every X seconds" sid="338469727806439" type="System">
-                                            <param id="0" name="Interval (seconds)">0.05</param>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="748598097798933" type="TextBackground">
+                                            <param id="0" name="Object">OpendNoteBook</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="8Direction" disabled="1" id="5" name="Set acceleration" sid="611155133844075" type="HistorianAnim">
-                                            <param id="0" name="Acceleration">HistorianAnim.8Direction.Acceleration + 350</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="923983566367586" type="System">
-                                            <param id="0" name="Seconds">0.5</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="830508314157780" type="System">
-                                            <param id="0" name="Layout">BattleField_0</param>
+                                        <action id="-15" name="Set visible" sid="841163431029859" type="TextBackground">
+                                            <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
+                                </event-block>
+                                <event-block sid="206028922352254">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="376390424558442" type="System">
+                                            <param id="0" name="Seconds">0.4</param>
+                                        </action>
+                                        <action behavior="Sine" id="0" name="Set active" sid="666171024417432" type="Moustache">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="181732327786413" type="ScientistText">
+                                            <param id="0" name="Text">&quot;We are counting on you to repair the History ! Good luck.&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="783510722969338" type="System">
+                                            <param id="0" name="Seconds">4</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="743689457149712" type="Audio">
+                                            <param id="0" name="Audio file">time machine launch</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;zizi&quot;</param>
+                                        </action>
+                                        <action behavior="Fade" id="1" name="Start fade" sid="756511807852327" type="BlackScreenIsolation" />
+                                        <action behavior="Sine" id="0" name="Set active" sid="820417997514469" type="Moustache">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="666738836762489" type="HistorianAnim">
+                                            <param id="0" name="Instance variable">DirectionScript</param>
+                                            <param id="1" name="Value">&quot;right&quot;</param>
+                                        </action>
+                                        <action behavior="8Direction" id="5" name="Set acceleration" sid="307547605869135" type="HistorianAnim">
+                                            <param id="0" name="Acceleration">350</param>
+                                        </action>
+                                        <action behavior="8Direction" id="4" name="Set max speed" sid="579328102904192" type="HistorianAnim">
+                                            <param id="0" name="Max Speed">99999</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="309808697283366">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="338469727806439" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" disabled="1" id="5" name="Set acceleration" sid="611155133844075" type="HistorianAnim">
+                                                    <param id="0" name="Acceleration">HistorianAnim.8Direction.Acceleration + 350</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="923983566367586" type="System">
+                                                    <param id="0" name="Seconds">0.5</param>
+                                                </action>
+                                                <action id="1" name="Set key" sid="351186608776754" type="SmalEvents">
+                                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                                    <param id="1" name="Value">&quot;Battle1&quot;</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="830508314157780" type="System">
+                                                    <param id="0" name="Layout">BattleField_0</param>
+                                                </action>
+                                                <action id="33" name="Stop all" sid="577249985331840" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -819,6 +888,9 @@
                             <param id="0" name="Layer">&quot;Basement&quot;</param>
                         </action>
                         <action id="-24" name="Move to top" sid="719642268845282" type="HistorianAnim" />
+                        <action id="-15" name="Set visible" sid="124774864566556" type="Trees">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="508619724921067">
@@ -842,12 +914,241 @@
                             <param id="0" name="Layer">&quot;Street&quot;</param>
                         </action>
                         <action id="-25" name="Move to bottom" sid="874518301257727" type="HistorianAnim" />
+                        <action id="-15" name="Set visible" sid="376896642658159" type="Trees">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="905382535869031">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="658847273171463" type="TextBackground">
+                                    <param id="0" name="Object">OpendNoteBook</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="505459154892697" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="136179219576046" type="OpendNoteBook">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="767189833594796" title="Environnement">
             <sub-events>
+                <event-block sid="953884720986425">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="785997358216485" type="SmalEvents">
+                            <param id="0" name="Key">&quot;Present_1&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;present3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Move to layer" sid="485917385924677" type="Roof">
+                            <param id="0" name="Layer">&quot;Cops&quot;</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="939615343324519" type="Roof" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="737520894042239">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="306736998182968" type="TimeMachine">
+                                    <param id="0" name="Opacity">80</param>
+                                </action>
+                                <action behavior="Solid" id="0" name="Set enabled" sid="646249762670332" type="TimeMachine">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="284864492623098">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="894285347708520" type="HistorianAnim">
+                                    <param id="0" name="Object">Blue_ZONE</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="745561263052889" type="HistorianAnim">
+                                    <param id="0" name="Object">Yellow_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="556106124551203" type="BlueTakeEnd">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="857063394053263">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="903598550407663" type="Keyboard">
+                                            <param id="0" name="Key">69</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Add key" sid="253636653121125" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Choice&quot;</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="987963591428094" type="System">
+                                            <param id="0" name="Layout">End_LY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="709354278466831">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="958881565240787" type="HistorianAnim">
+                                    <param id="0" name="Object">Blue_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="938278317290313" type="BlueTakeEnd">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="725128390908354">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="295994708555197" type="TextBackground">
+                                    <param id="0" name="Object">Blue_ZONE</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="968460161132894" type="HistorianAnim">
+                                    <param id="0" name="Object">Blue_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="748090724692614" type="TextBackground">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="810947089895205">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="368381624290054" type="TextBackground">
+                                    <param id="0" name="Object">Blue_ZONE</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="248651335319062" type="HistorianAnim">
+                                    <param id="0" name="Object">Blue_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="370431954867646" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Yellow</comment>
+                        <event-block sid="618255217511662">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="905019292795278" type="HistorianAnim">
+                                    <param id="0" name="Object">Yellow_ZONE</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="812344098185102" type="HistorianAnim">
+                                    <param id="0" name="Object">Blue_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="895987826131111" type="YellowTakeEnd">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="961926083514435">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="989499611036620" type="Keyboard">
+                                            <param id="0" name="Key">69</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Add key" sid="275039178846411" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Choice&quot;</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="855099615708939" type="System">
+                                            <param id="0" name="Layout">End_LY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="359319009483298">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="405851448077074" type="HistorianAnim">
+                                    <param id="0" name="Object">Yellow_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="521226576805465" type="YellowTakeEnd">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="650282473339859">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="676433634484829" type="TextBackground">
+                                    <param id="0" name="Object">Yellow_ZONE</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="844230382786237" type="HistorianAnim">
+                                    <param id="0" name="Object">Yellow_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="760546858899600" type="TextBackground">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="217423479083016">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="541526885546453" type="Keyboard">
+                                            <param id="0" name="Key">69</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="616035323091347" type="System">
+                                            <param id="0" name="Layout">End_LY</param>
+                                        </action>
+                                        <action id="0" name="Add key" sid="120686692588288" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Choice&quot;</param>
+                                            <param id="1" name="Value">&quot;blue&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="408360787385748">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="848355200477704" type="TextBackground">
+                                    <param id="0" name="Object">Yellow_ZONE</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="319417110699926" type="HistorianAnim">
+                                    <param id="0" name="Object">Yellow_ZONE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="624204224133987" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="432660614499457">
+                            <conditions>
+                                <condition id="-16" name="Is on layer" sid="353656158103246" type="TextBackground">
+                                    <param id="0" name="Layer">&quot;Basement&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="881691712362088" type="TextBackground">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="932127316747676">
                     <conditions>
                         <condition id="0" name="Compare value" sid="223758993828575" type="SmalEvents">
@@ -858,6 +1159,78 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <comment>Blink Tuto open note book</comment>
+                        <event-block sid="530388061704918">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="283521116580077" type="HistorianAnim">
+                                    <param id="0" name="Object">BownlingCave</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="997282325369809">
+                                    <conditions>
+                                        <condition id="9" name="Is overlapping at offset" sid="512708081045330" type="LightSmall2">
+                                            <param id="0" name="Object">BownlingCave</param>
+                                            <param id="1" name="Offset X">30</param>
+                                            <param id="2" name="Offset Y">30</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="945116760322512">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="379547873955448" type="TextBackground">
+                                                    <param id="0" name="Object">OpendNoteBook</param>
+                                                </condition>
+                                                <condition id="-9" inverted="1" name="Is visible" sid="431305651426886" type="BombesVolees" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="383978622725313" type="TextBackground">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="429999084979391" type="OpendNoteBook">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="106093113834626">
+                                            <conditions />
+                                            <actions>
+                                                <action behavior="opa" id="1" name="Set period" sid="749525102964989" type="LightSmall2">
+                                                    <param id="0" name="Period">1</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="137422213086225" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">30</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="902427288252629" type="System">
+                                                    <param id="0" name="Seconds">4</param>
+                                                </action>
+                                                <action behavior="opa" id="2" name="Set magnitude" sid="128740581323577" type="LightSmall2">
+                                                    <param id="0" name="Magnitude">20</param>
+                                                </action>
+                                                <action behavior="opa" id="1" name="Set period" sid="811951976309264" type="LightSmall2">
+                                                    <param id="0" name="Period">8</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="707419373349988">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="-15" name="Set visible" sid="836966004386063" type="TextBackground">
+                                                            <param id="0" name="Visibility">0</param>
+                                                        </action>
+                                                        <action id="-15" name="Set visible" sid="283084424038095" type="OpendNoteBook">
+                                                            <param id="0" name="Visibility">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <comment>TAG</comment>
                         <event-block sid="835490161926763">
                             <conditions>
@@ -1036,6 +1409,12 @@
                             <actions>
                                 <action id="-15" name="Set visible" sid="507298362051620" type="TP_txt">
                                     <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="223085608398643" type="Audio">
+                                    <param id="0" name="Audio file">time machine launch</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;zizi&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -1258,179 +1637,303 @@
                         <action id="6" name="Set speed" sid="763803338537196" type="trash">
                             <param id="0" name="Speed">0</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="656935406855214">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="553717306563817" type="System" />
-                        <condition id="3" inverted="1" name="Has key" sid="907724193581221" type="SmalEvents">
-                            <param id="0" name="Key">&quot;Present_1&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Add key" sid="968256471409132" type="SmalEvents">
-                            <param id="0" name="Key">&quot;Present_1&quot;</param>
-                            <param id="1" name="Value">&quot;present1&quot;</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="263502462646105" type="System" />
-                    </actions>
-                </event-block>
-                <event-block sid="471947692717099">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="464793346162632" type="System" />
-                        <condition id="0" name="Compare value" sid="146903712639853" type="SmalEvents">
-                            <param id="0" name="Key">&quot;Present_1&quot;</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;present1&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="755043538862580" type="StreetsBase">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="849599957081086" type="Roof">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="339272441358832" type="Trees">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="551241295239035" type="trash">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="501252746080749" type="Field_TimeMachine" />
-                        <action id="-9" name="Destroy" sid="870369001246841" type="Pendus" />
-                        <action id="-9" name="Destroy" sid="667968644708929" type="Approuved5" />
-                        <action id="-9" name="Destroy" sid="560388116674027" type="BombesVolees" />
-                        <action id="-9" name="Destroy" sid="898436573287668" type="Approuved6" />
-                    </actions>
-                </event-block>
-                <event-block sid="614968425481999">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="859401825545763" type="System" />
-                        <condition id="0" name="Compare value" sid="676726890086324" type="SmalEvents">
-                            <param id="0" name="Key">&quot;Present_1&quot;</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;past1&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="445156488465090" type="StreetsBase">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="711273581902379" type="Roof">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="774370246978219" type="Trees">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="487317530698926" type="trash">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="306099293021190" type="Ctrl" />
-                        <action id="-9" name="Destroy" sid="568646204550066" type="CtrlCam" />
-                        <action id="-9" name="Destroy" sid="917774921334326" type="CtrlLeft" />
-                        <action id="-9" name="Destroy" sid="177086295506886" type="CtrlStop" />
-                        <action id="-9" name="Destroy" sid="954238813223996" type="CtrlUp" />
-                        <action id="-9" name="Destroy" sid="311206395317053" type="Scientist" />
-                        <action id="-9" name="Destroy" sid="478200358029204" type="TimeMachine" />
-                        <action id="-9" name="Destroy" sid="613496792293567" type="Moustache" />
-                    </actions>
-                </event-block>
-                <event-block sid="326668175801082">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="236264068045178" type="System" />
-                        <condition id="0" name="Compare value" sid="166964373291903" type="SmalEvents">
-                            <param id="0" name="Key">&quot;Present_1&quot;</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;present2&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="324454964279754" type="StreetsBase">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="112557673372436" type="Roof">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="998395317035511" type="Trees">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="114223050608573" type="trash">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="978830686585811" type="Field_TimeMachine" />
-                        <action id="-16" name="Set opacity" sid="431700047777127" type="Pendus">
-                            <param id="0" name="Opacity">40</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="564252521036209" type="Approuved5">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="805106349165433" type="BombesVolees">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="141531840400852" type="Approuved6">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="388045716946249" type="BombesVolees">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="835564400155736" type="Approuved6">
-                            <param id="0" name="Frame number">0</param>
+                        <action behavior="Pin" id="1" name="Unpin" sid="308607509795406" type="BlackBackGound" />
+                        <action id="-3" name="Set position" sid="251551548085897" type="BlackBackGound">
+                            <param id="0" name="X">960</param>
+                            <param id="1" name="Y">Camera.Y</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="952218519691881">
+                        <event-block sid="949735798111367">
                             <conditions>
-                                <condition id="3" name="Has key" sid="745555070962797" type="SmalEvents">
-                                    <param id="0" name="Key">&quot;Tag&quot;</param>
-                                </condition>
-                                <condition id="0" name="Compare value" sid="195446916823334" type="SmalEvents">
-                                    <param id="0" name="Key">&quot;Tag&quot;</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
+                                <condition id="4" inverted="1" name="Is any playing" sid="480841241360586" type="Audio" />
                             </conditions>
                             <actions>
-                                <action id="-15" name="Set visible" sid="434809143314915" type="Tag_fromPast">
-                                    <param id="0" name="Visibility">1</param>
+                                <action id="-16" name="Wait" sid="216277694230115" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Play" sid="112356498229082" type="Audio">
+                                    <param id="0" name="Audio file">Synthwave-ST-Present-Wave</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;musiques1&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="165406751463280">
+                        <event-block sid="574155280644036">
                             <conditions>
-                                <condition id="3" name="Has key" sid="328007457922310" type="SmalEvents">
-                                    <param id="0" name="Key">&quot;Can&quot;</param>
-                                </condition>
-                                <condition id="0" name="Compare value" sid="304985104006147" type="SmalEvents">
-                                    <param id="0" name="Key">&quot;Can&quot;</param>
+                                <condition id="0" name="Compare value" sid="304451559950684" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">&quot;present3&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-15" name="Set visible" sid="381854637400285" type="trash">
-                                    <param id="0" name="Visibility">0</param>
+                                <action id="5" name="Set frame" sid="799418570122861" type="StreetsBase">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
+                                <action id="5" name="Set frame" sid="545962413671268" type="Roof">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="738218110738395" type="Trees">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="628749312839511" type="trash">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="178752455451924" type="Field_TimeMachine" />
+                                <action id="-16" name="Set opacity" sid="369276980881035" type="Pendus">
+                                    <param id="0" name="Opacity">40</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="464005387838099" type="Approuved5">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="289663345142379" type="BombesVolees">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="310022963278288" type="Approuved6">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="608085344829728" type="BombesVolees">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="809520647112378" type="Approuved6">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="831095094991473" type="Ctrl" />
+                                <action id="-9" name="Destroy" sid="684843456629368" type="CtrlCam" />
+                                <action id="-9" name="Destroy" sid="500843582802088" type="CtrlLeft" />
+                                <action id="-9" name="Destroy" sid="549897038415893" type="CtrlStop" />
+                                <action id="-9" name="Destroy" sid="954105282145549" type="CtrlUp" />
+                                <action id="-4" name="Set layer visible" sid="194942497008420" type="System">
+                                    <param id="0" name="Layer">&quot;Cops&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="108079326677632" type="ScientistText" />
+                            </actions>
+                            <sub-events>
+                                <event-block disabled="1" sid="940694183609330">
+                                    <conditions>
+                                        <condition id="-5" name="Compare width" sid="882458185641053" type="TextBackground">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Width">1440</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="770684227104446" type="BookTextBackGound" />
+                                        <action id="-9" name="Destroy" sid="697215634717060" type="ScientistText" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="578605598052098">
+                                    <conditions>
+                                        <condition id="3" name="Has key" sid="669132042714579" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Tag&quot;</param>
+                                        </condition>
+                                        <condition id="0" name="Compare value" sid="996732949633032" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Tag&quot;</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="681604897816156" type="Tag_fromPast">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="186952083998032">
+                                    <conditions>
+                                        <condition id="3" name="Has key" sid="795634522906657" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Can&quot;</param>
+                                        </condition>
+                                        <condition id="0" name="Compare value" sid="660483867866912" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Can&quot;</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="875330992459848" type="trash">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="326668175801082">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="166964373291903" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;present2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="324454964279754" type="StreetsBase">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="112557673372436" type="Roof">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="998395317035511" type="Trees">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="114223050608573" type="trash">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="978830686585811" type="Field_TimeMachine" />
+                                <action id="-16" name="Set opacity" sid="431700047777127" type="Pendus">
+                                    <param id="0" name="Opacity">40</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="564252521036209" type="Approuved5">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="805106349165433" type="BombesVolees">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="141531840400852" type="Approuved6">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="388045716946249" type="BombesVolees">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="835564400155736" type="Approuved6">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="952218519691881">
+                                    <conditions>
+                                        <condition id="3" name="Has key" sid="745555070962797" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Tag&quot;</param>
+                                        </condition>
+                                        <condition id="0" name="Compare value" sid="195446916823334" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Tag&quot;</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="434809143314915" type="Tag_fromPast">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="165406751463280">
+                                    <conditions>
+                                        <condition id="3" name="Has key" sid="328007457922310" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Can&quot;</param>
+                                        </condition>
+                                        <condition id="0" name="Compare value" sid="304985104006147" type="SmalEvents">
+                                            <param id="0" name="Key">&quot;Can&quot;</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="381854637400285" type="trash">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="614968425481999">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="676726890086324" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;past1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="445156488465090" type="StreetsBase">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="711273581902379" type="Roof">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="774370246978219" type="Trees">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="487317530698926" type="trash">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="306099293021190" type="Ctrl" />
+                                <action id="-9" name="Destroy" sid="568646204550066" type="CtrlCam" />
+                                <action id="-9" name="Destroy" sid="917774921334326" type="CtrlLeft" />
+                                <action id="-9" name="Destroy" sid="177086295506886" type="CtrlStop" />
+                                <action id="-9" name="Destroy" sid="954238813223996" type="CtrlUp" />
+                                <action id="-9" name="Destroy" sid="311206395317053" type="Scientist" />
+                                <action id="-9" name="Destroy" sid="478200358029204" type="TimeMachine" />
+                                <action id="-9" name="Destroy" sid="613496792293567" type="Moustache" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="471947692717099">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="146903712639853" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;present1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="755043538862580" type="StreetsBase">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="849599957081086" type="Roof">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="339272441358832" type="Trees">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="551241295239035" type="trash">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="501252746080749" type="Field_TimeMachine" />
+                                <action id="-9" name="Destroy" sid="870369001246841" type="Pendus" />
+                                <action id="-9" name="Destroy" sid="667968644708929" type="Approuved5" />
+                                <action id="-9" name="Destroy" sid="560388116674027" type="BombesVolees" />
+                                <action id="-9" name="Destroy" sid="898436573287668" type="Approuved6" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="656935406855214">
+                            <conditions>
+                                <condition id="3" inverted="1" name="Has key" sid="907724193581221" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Add key" sid="968256471409132" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Value">&quot;present1&quot;</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="263502462646105" type="System" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="294484908247415">
+                            <conditions>
+                                <condition id="0" name="Compare value" sid="897227022003077" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;present3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="146110445212417" type="System">
+                                    <param id="0" name="Layer">&quot;Cops&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="161229808637991" type="Roof">
+                                    <param id="0" name="Layer">&quot;Basement&quot;</param>
+                                </action>
+                                <action id="-24" name="Move to top" sid="899715943125048" type="Roof" />
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="266440273045682">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="969509340312006" type="Keyboard">
-                    <param id="0" name="Key">72</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Add key" sid="663004093924704" type="SmalEvents">
-                    <param id="0" name="Key">&quot;Present_1&quot;</param>
-                    <param id="1" name="Value">&quot;present2&quot;</param>
-                </action>
-                <action id="-26" name="Restart layout" sid="118478350549337" type="System" />
-            </actions>
-        </event-block>
         <event-group description="" sid="779943182042953" title="Book Present">
             <sub-events>
                 <event-block sid="962897540672330">

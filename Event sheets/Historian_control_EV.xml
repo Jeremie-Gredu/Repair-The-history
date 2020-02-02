@@ -299,6 +299,16 @@
                                 <condition id="0" name="On key pressed" sid="622784170386262" type="Keyboard">
                                     <param id="0" name="Key">70</param>
                                 </condition>
+                                <condition id="0" name="Compare value" sid="154740871840496" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;present1&quot;</param>
+                                </condition>
+                                <condition id="0" name="Compare value" sid="242704230009544" type="SmalEvents">
+                                    <param id="0" name="Key">&quot;Present_1&quot;</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;present3&quot;</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-16" name="Wait" sid="494168497635211" type="System">
@@ -443,7 +453,7 @@
                                 </condition>
                                 <condition id="-2" name="Compare Y" sid="547023952133999" type="Camera">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Y co-ordinate">3460</param>
+                                    <param id="1" name="Y co-ordinate">RegulBox.LayoutHeight-540</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -472,7 +482,7 @@
                             <conditions>
                                 <condition id="-1" name="Compare X" sid="523383870168447" type="Camera">
                                     <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="X co-ordinate">6040</param>
+                                    <param id="1" name="X co-ordinate">RegulBox.LayoutWidth-960</param>
                                 </condition>
                                 <condition id="-1" name="Every tick" sid="792603354956462" type="System" />
                                 <condition id="-2" name="Compare Y" sid="639249816241222" type="Camera">
@@ -481,7 +491,7 @@
                                 </condition>
                                 <condition id="-2" name="Compare Y" sid="759857819115134" type="Camera">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Y co-ordinate">3460</param>
+                                    <param id="1" name="Y co-ordinate">RegulBox.LayoutHeight-540</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -495,7 +505,7 @@
                             <conditions>
                                 <condition id="-1" name="Compare X" sid="936057611937408" type="Camera">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="X co-ordinate">6040</param>
+                                    <param id="1" name="X co-ordinate">RegulBox.LayoutWidth-960</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="125418428918317" type="System" />
                             </conditions>
@@ -520,7 +530,7 @@
                                 </condition>
                                 <condition id="-1" name="Compare X" sid="226178718090317" type="Camera">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="X co-ordinate">6040</param>
+                                    <param id="1" name="X co-ordinate">RegulBox.LayoutWidth-960</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -549,7 +559,7 @@
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="954420726276455" type="Camera">
                                     <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Y co-ordinate">3460</param>
+                                    <param id="1" name="Y co-ordinate">RegulBox.LayoutHeight-540</param>
                                 </condition>
                                 <condition id="-1" name="Every tick" sid="799864962606463" type="System" />
                                 <condition id="-1" name="Compare X" sid="996989343885342" type="Camera">
@@ -558,7 +568,7 @@
                                 </condition>
                                 <condition id="-1" name="Compare X" sid="895645647825709" type="Camera">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="X co-ordinate">6040</param>
+                                    <param id="1" name="X co-ordinate">RegulBox.LayoutWidth-960</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -572,7 +582,7 @@
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="930231854871642" type="Camera">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Y co-ordinate">3460</param>
+                                    <param id="1" name="Y co-ordinate">RegulBox.LayoutHeight-540</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="432332810356730" type="System" />
                             </conditions>
